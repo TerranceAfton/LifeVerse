@@ -6,6 +6,15 @@ LifeVerse is a next-generation life simulation game built in Unity 6 LTS.
 
 LifeVerse Engine v1.0 Complete
 
+Foundation Pack 8 Complete
+
+✔ Character Framework
+✔ Needs Component
+✔ Needs System
+✔ Simulation Framework Connected
+✔ Launch Configuration
+✔ Testing Scene
+
 🚧 In Active Development
 
 ## Engine
