@@ -20,6 +20,18 @@ Milestone: First Working Character Simulation
 
 - Testing Scene working
 
+██████████░░░░░░░░░░ 35%
+Engine Foundation
+
+████████░░░░░░░░░░░░ 25%
+Gameplay Foundation
+
+░░░░░░░░░░░░░░░░░░░░
+World Building
+
+░░░░░░░░░░░░░░░░░░░░
+Content Creation
+
 🚧 In Active Development
 
 ## Engine
