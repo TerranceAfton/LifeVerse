@@ -394,6 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604346009}
   - component: {fileID: 1604346010}
+  - component: {fileID: 1604346011}
   m_Layer: 0
   m_Name: Bootstrap
   m_TagString: Untagged
@@ -433,6 +434,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a160f907cd46442b4b7b7d402ee9e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bootstrap
+--- !u!114 &1604346011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604346008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0483fbbb826c6498236304ba9a121c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Core.Launch.LaunchConfiguration
+  launchScene: 2
 --- !u!1 &1873320896
 GameObject:
   m_ObjectHideFlags: 0
