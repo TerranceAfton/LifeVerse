@@ -43,10 +43,10 @@ public class CharacterSimulationTest : MonoBehaviour
 
         Debug.Log("--------------------------------");
 
-        Debug.Log($"Hunger: {_character.Needs.GetValue(NeedType.Hunger):F1}");
-        Debug.Log($"Energy: {_character.Needs.GetValue(NeedType.Energy):F1}");
-        Debug.Log($"Fun: {_character.Needs.GetValue(NeedType.Fun):F1}");
-        Debug.Log($"Social: {_character.Needs.GetValue(NeedType.Social):F1}");
+        // Debug.Log($"Hunger: {_character.Needs.GetValue(NeedType.Hunger):F1}");
+        // Debug.Log($"Energy: {_character.Needs.GetValue(NeedType.Energy):F1}");
+        // Debug.Log($"Fun: {_character.Needs.GetValue(NeedType.Fun):F1}");
+        // Debug.Log($"Social: {_character.Needs.GetValue(NeedType.Social):F1}");
     }
 }
 // Debug.Log($"Created Character: {_character.Profile.Name.FullName}");
