@@ -135,19 +135,33 @@ C#
 ## Project Structure
 
 Assets/
+
 ├── Art/
+
 ├── Data/
+
 ├── Prefabs/
+
 ├── Resources/
+
 ├── Scenes/
+
 ├── Scripts/
+
 │   ├── BuildMode/
+
 │   ├── Camera/
+
 │   ├── Characters/
+
 │   ├── Core/
+
 │   ├── Interaction/
+
 │   ├── Input/
+
 │   ├── Simulation/
+
 │   └── Time/
 
 🚧 In Active Development
