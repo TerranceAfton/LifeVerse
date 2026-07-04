@@ -21,6 +21,8 @@
 - Camera follow
 - Character duplication bug
 
+---
+
 ## v0.2.1 - Animation Foundation
 
 ### Added
