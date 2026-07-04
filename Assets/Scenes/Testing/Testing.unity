@@ -699,7 +699,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358956575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -763,6 +763,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2132504685}
+  - {fileID: 2096651181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1358956581
@@ -795,6 +796,7 @@ MonoBehaviour:
     Gravity: -20
     GroundedGravity: -2
     JumpHeight: 1.2
+  _animationController: {fileID: 0}
 --- !u!114 &1358956583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,6 +1277,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fc93021fdbd0a458865a36fe6f3f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Furniture.Chairs.ChairInteractable
+--- !u!1001 &2096651180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1358956580}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_Name
+      value: character
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b62f05e423da7748a3388eb950f8f30, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 08b327202bf7e554287118482e325004, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 08b327202bf7e554287118482e325004, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2096651183}
+  m_SourcePrefab: {fileID: 100100000, guid: 08b327202bf7e554287118482e325004, type: 3}
+--- !u!4 &2096651181 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
+  m_PrefabInstance: {fileID: 2096651180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096651182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 08b327202bf7e554287118482e325004, type: 3}
+  m_PrefabInstance: {fileID: 2096651180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2096651183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096651182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5db946ef8a3f34d829f65aae2a2044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Characters.Animation.CharacterAnimationController
 --- !u!1 &2132504684
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+using LifeVerse.Characters.Animation;
 
 namespace LifeVerse.Characters.Controllers
 {
@@ -12,6 +13,9 @@ namespace LifeVerse.Characters.Controllers
         [SerializeField]
         private CharacterMovementSettings _settings = new();
 
+        [SerializeField]
+        private CharacterAnimationController _animationController;
+
         private UnityEngine.CharacterController _controller;
         private CharacterInput _input;
 
@@ -21,6 +25,12 @@ namespace LifeVerse.Characters.Controllers
         {
             _controller = GetComponent<UnityEngine.CharacterController>();
             _input = GetComponent<CharacterInput>();
+
+            if (_animationController == null)
+            {
+                _animationController =
+                    GetComponentInChildren<CharacterAnimationController>();
+            }
         }
 
         private void Update()
@@ -43,6 +53,13 @@ namespace LifeVerse.Characters.Controllers
                 : _settings.WalkSpeed;
 
             _controller.Move(move * speed * UnityEngine.Time.deltaTime);
+
+            // Update animation speed
+            if (_animationController != null)
+            {
+                _animationController.SetMovementSpeed(
+                    move.magnitude * speed);
+            }
         }
 
         private void ApplyGravity()
