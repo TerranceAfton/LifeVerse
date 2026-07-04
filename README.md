@@ -1,48 +1,85 @@
-## About LifeVerse
+# 🌎 LifeVerse
 
-LifeVerse is an open-world life simulation game being developed in Unity 6.
+**A next-generation life simulation game built with Unity 6.**
 
-The goal is to create a highly detailed life simulator inspired by games like The Sims while expanding player freedom through deeper AI, realistic life progression, careers, relationships, personality, memories, and an interactive world.
-
-## Current Status
-
-### LifeVerse Pre-Alpha v0.2
-
-**Current Milestone:** Playable Gameplay Foundation
-
-### ✅ Completed
-
-- Engine Foundation
-- Service Registry Architecture
-- Scene Management
-- Character Framework
-- Character Simulation
-- Needs System
-- Time System
-- Player Controller
-- Third-Person Camera (Cinemachine)
-- Interaction Framework
-- Context Interaction UI
-- Testing Environment
-
-### 🚧 Currently Building
-
-- Furniture Interaction
-- Sitting System
-- Animation Integration
-
-### 📅 Next Milestones
-
-- Bed & Sleep System
-- Doors
-- Build Mode Prototype
-- Create-a-Verse Prototype
-- NPC AI
+LifeVerse is an ambitious life simulation game inspired by classics like The Sims while introducing deeper AI, realistic life progression, advanced personalities, dynamic relationships, careers, memories, and an interactive open world.
 
 ---
 
+# 🚧 Development Status
+
+## Current Version
+
+**Prototype v0.2 (Pre-Alpha)**
+
+### Current Milestone
+
+**Gameplay Foundation Complete**
+
+---
+
+## ✅ Completed
+
+### Core Engine
+- Bootstrap System
+- Service Registry
+- Scene Management
+- Configuration System
+- Logging System
+
+### Character System
+- Character Framework
+- Character Profiles
+- Character Manager
+
+### Simulation
+- Time System
+- Needs System
+- Simulation Manager
+
+### Player
+- Third-Person Character Controller
+- Sprinting
+- Gravity
+- Cinemachine Camera
+
+### Interaction
+- Interactable Object Framework
+- Interaction Detection
+- Context Interaction UI
+- Keyboard Interaction (E)
+
+---
+
+## 🚧 Currently Developing
+
+- Furniture Interaction
+- Sitting System
+- Animation System
+
+---
+
+## 📅 Upcoming Features
+
+- Bed & Sleep System
+- Doors
+- Create-a-Verse
+- Build Mode
+- NPC AI
+- Relationships
+- Careers
+- Skills
+- Personality
+- Memories
+- Economy
+- Housing
+
+---
+
+# 📊 Development Progress
+
 ████████████░░░░░░░░ 60%
-Engine & Core Systems
+Core Engine
 
 ██████░░░░░░░░░░░░░░ 30%
 Gameplay Systems
@@ -53,115 +90,48 @@ World Building
 ░░░░░░░░░░░░░░░░░░░░
 Content Creation
 
-## Current Features
+---
 
-### Core Engine
-- Bootstrap initialization system
-- Service Registry architecture
-- Scene management
-- Configuration system
-- Logging system
+# 🗺️ Development Roadmap
 
-### Character System
-- Character creation
-- Character profiles
-- Character manager
-- Simulation-ready architecture
+## ✅ Phase 1 – Engine Foundation
+- Bootstrap
+- Service Architecture
+- Character Framework
+- Simulation
+- Needs System
 
-### Simulation
-- Time system
-- Needs system
-- Hunger
-- Energy
-- Fun
-- Social
+## ✅ Phase 2 – Gameplay Foundation
+- Character Movement
+- Third-Person Camera
+- Interaction System
+- Interaction UI
 
-### Player
-- Third-person movement
-- Character controller
-- Cinemachine follow camera
+## 🚧 Phase 3 – Living World
+- Furniture
+- Animations
+- Object Interactions
+- Basic House
 
-### Interaction System
-- Interactable object framework
-- Interaction detection
-- Context-sensitive interaction prompts
-- Keyboard interaction (E)
+## 📅 Phase 4 – Life Simulation
+- Careers
+- Relationships
+- Personality
+- Memories
+- Skills
 
-## Roadmap
+## 📅 Phase 5 – World Expansion
+- Neighborhoods
+- Vehicles
+- Businesses
+- Multiplayer (Future)
 
-### Completed
-- [x] Engine Foundation
-- [x] Service Architecture
-- [x] Character System
-- [x] Needs System
-- [x] Player Controller
-- [x] Third-Person Camera
-- [x] Interaction Framework
-- [x] Interaction UI
+---
 
-### In Progress
-- [ ] Furniture Interactions
-- [ ] Sitting System
-- [ ] Animation System
+# 🛠 Engine
 
-### Planned
-- [ ] Build Mode
-- [ ] Create-a-Verse
-- [ ] Relationships
-- [ ] Careers
-- [ ] Skills
-- [ ] Memories
-- [ ] Personality
-- [ ] Traits
-- [ ] AI Daily Schedules
-- [ ] Economy
-- [ ] Housing
-- [ ] Vehicles
-
-## Development Status
-
-Current Version:
-Prototype
-
-Current Focus:
-Furniture Interaction & Gameplay Systems
-
-Engine:
-Unity 6
-
-Language:
-C#
-
-## Project Structure
-
-Assets/
-
-├── Art/
-
-├── Data/
-
-├── Prefabs/
-
-├── Resources/
-
-├── Scenes/
-
-├── Scripts/
-
-│   ├── BuildMode/
-
-│   ├── Camera/
-
-│   ├── Characters/
-
-│   ├── Core/
-
-│   ├── Interaction/
-
-│   ├── Input/
-
-│   ├── Simulation/
-
-│   └── Time/
-
-🚧 In Active Development
+- Unity 6
+- C#
+- Cinemachine
+- TextMeshPro
+- Git + GitHub
