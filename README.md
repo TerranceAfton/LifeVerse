@@ -21,6 +21,16 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 
 ---
 
+## 🚀 Recent Milestones
+
+- ✅ Replaced prototype capsule with a Mixamo humanoid character.
+- ✅ Added a third-person animation system using Blend Trees.
+- ✅ Integrated Idle, Walk, and Run animations.
+- ✅ Implemented a context-sensitive interaction prompt system.
+- 🚧 Developing the first interactive furniture (Chair).
+
+---
+
 # 🚧 Development Status
 
 ## Current Version
