@@ -2,8 +2,6 @@
 
 All notable changes to LifeVerse will be documented in this file.
 
-The format is inspired by Keep a Changelog and follows Semantic Versioning during development.
-
 ---
 
 ## [0.2.1] - 2026-07-04
