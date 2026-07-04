@@ -1,3 +1,18 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+              LIFEVERSE
+
+      Build • Live • Create • Thrive
+
+A Next-Generation Life Simulation Game
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+![Unity](https://img.shields.io/badge/Unity-6-black)
+![C#](https://img.shields.io/badge/C%23-.NET-purple)
+![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
+![Version](https://img.shields.io/badge/Version-v0.2-blue)
+
 # 🌎 LifeVerse
 
 **A next-generation life simulation game built with Unity 6.**
