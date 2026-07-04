@@ -637,6 +637,7 @@ GameObject:
   - component: {fileID: 1358956582}
   - component: {fileID: 1358956583}
   - component: {fileID: 1358956584}
+  - component: {fileID: 1358956585}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -823,6 +824,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202c5a8dee2a998449fba6643d05306e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Interaction.Components.InteractionInput
+--- !u!114 &1358956585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358956575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373624f732e532346a8d8898143dfa3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Characters.States.CharacterStateController
 --- !u!1 &1465024711
 GameObject:
   m_ObjectHideFlags: 0
