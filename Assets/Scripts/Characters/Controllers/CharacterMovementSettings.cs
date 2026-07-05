@@ -20,5 +20,8 @@ namespace LifeVerse.Characters.Controllers
 
         [Header("Jump")]
         public float JumpHeight = 1.2f;
+
+        [Header("Rotation")]
+        public float RotationSpeed = 10f;
     }
 }

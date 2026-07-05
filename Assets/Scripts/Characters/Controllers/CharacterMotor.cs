@@ -41,12 +41,39 @@ namespace LifeVerse.Characters.Controllers
 
         private void Move()
         {
-            Vector3 move = new Vector3(
-                _input.MoveInput.x,
-                0f,
-                _input.MoveInput.y);
+            // Get camera-relative directions
+            Transform cameraTransform = UnityEngine.Camera.main.transform;
 
-            move = transform.TransformDirection(move);
+            Vector3 cameraForward = cameraTransform.forward;
+            Vector3 cameraRight = cameraTransform.right;
+
+            // Ignore vertical component
+            cameraForward.y = 0f;
+            cameraRight.y = 0f;
+
+            cameraForward.Normalize();
+            cameraRight.Normalize();
+
+            // Calculate movement direction relative to camera
+            Vector3 move =
+                cameraForward * -_input.MoveInput.y +
+                cameraRight * _input.MoveInput.x;
+
+            Debug.DrawRay(transform.position, move, Color.green);
+            Debug.DrawRay(transform.position, transform.forward, Color.blue);
+
+            // Rotate player toward movement direction
+            /*
+            if (move.sqrMagnitude > 0.01f)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(move);
+
+                transform.rotation = Quaternion.Slerp(
+                    transform.rotation,
+                    targetRotation,
+                    _settings.RotationSpeed * UnityEngine.Time.deltaTime);
+             }
+             */
 
             float speed = _input.SprintHeld
                 ? _settings.SprintSpeed
@@ -54,7 +81,6 @@ namespace LifeVerse.Characters.Controllers
 
             _controller.Move(move * speed * UnityEngine.Time.deltaTime);
 
-            // Update animation speed
             if (_animationController != null)
             {
                 _animationController.SetMovementSpeed(
