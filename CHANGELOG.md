@@ -2,6 +2,36 @@
 
 All notable changes to LifeVerse will be documented in this file.
 
+> Version numbers follow the project's milestone-based development cycle.
+
+## [0.2.2] - 2026-07-06
+
+### Added
+- LifeVerse Camera Controller
+- Camera-relative movement
+- Unity New Input System integration
+- CameraTarget architecture
+- Visual parent object for character models
+- Development archive
+- Milestone 1 screenshots
+- Milestone 1 gameplay recordings
+
+### Changed
+- Migrated player input to Unity's New Input System
+- Reorganized player hierarchy
+- Improved third-person controller architecture
+- Improved camera system
+- Updated project documentation
+- Updated README
+
+### Fixed
+- Character walking backwards
+- Character model orientation
+- Camera spawning in front of the player
+- Camera rotation issues
+- Camera-relative movement bugs
+- Mixed input system issues
+
 ---
 
 ## [0.2.1] - 2026-07-04
@@ -17,7 +47,7 @@ All notable changes to LifeVerse will be documented in this file.
 - Character Animation Controller
 - Character State System foundation
 
-### Improved
+### Changed
 - Player architecture
 - Character hierarchy
 - Animation workflow
@@ -30,7 +60,7 @@ All notable changes to LifeVerse will be documented in this file.
 
 ---
 
-## [0.2.0] - Gameplay Foundation
+## [0.2.0] - Gameplay Foundation - 2026-07-03
 
 ### Added
 - Third-person Character Controller
@@ -47,7 +77,7 @@ All notable changes to LifeVerse will be documented in this file.
 - Context-sensitive interaction UI
 - World testing scene
 
-### Improved
+### Changed
 - Character controller responsiveness
 - Camera follow behavior
 - Interaction workflow
@@ -74,7 +104,7 @@ All notable changes to LifeVerse will be documented in this file.
 - Time progression
 - Simulation Manager
 
-### Improved
+### Changed
 - Simulation architecture
 - Character update pipeline
 
@@ -92,7 +122,7 @@ All notable changes to LifeVerse will be documented in this file.
 - Initial testing scene
 - Core game initialization
 
-### Improved
+### Changed
 - Project architecture
 - Service initialization
 - Startup workflow
