@@ -21,12 +21,25 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 
 ---
 
+## Vision
+
+LifeVerse aims to become a living, evolving life simulation where every character has meaningful routines, relationships, memories, ambitions, and choices in a dynamic world shaped by both the player and its inhabitants.
+
+---
+
+> ⚠️ LifeVerse is currently in active pre-alpha development.
+> Features, systems, and roadmap items are subject to change as development progresses.
+
+---
+
 ## 🚀 Recent Milestones
 
-- ✅ Replaced prototype capsule with a Mixamo humanoid character.
-- ✅ Added a third-person animation system using Blend Trees.
-- ✅ Integrated Idle, Walk, and Run animations.
-- ✅ Implemented a context-sensitive interaction prompt system.
+- ✅ Completed the third-person character controller.
+- ✅ Built the LifeVerse Camera Controller.
+- ✅ Migrated fully to Unity's New Input System.
+- ✅ Added camera-relative movement.
+- ✅ Reorganized the player hierarchy for long-term scalability.
+- ✅ Completed Character Foundation Milestone.
 - 🚧 Developing the first interactive furniture (Chair).
 
 ---
@@ -37,9 +50,13 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 
 **Prototype v0.2 (Pre-Alpha)**
 
-### Current Milestone
+### Last Completed Milestone
 
-**Gameplay Foundation Complete**
+🏆 Character Foundation
+
+### Current Development
+
+🚧 Interaction System
 
 ---
 
@@ -64,12 +81,15 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 
 ### Player
 - Third-Person Character Controller
+- Camera Relative Movement
 - Sprinting
 - Gravity
 - Cinemachine Camera
 - Mixamo Character Integration
 - Animation Controller
 - Blend Tree (Idle / Walk / Run)
+- LifeVerse Camera Controller
+- Unity New Input System
 
 ### Interaction
 - Interaction Framework
@@ -82,8 +102,9 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 
 ## 🚧 Currently Developing
 
+- Furniture Interaction System
 - Sitting System
-- Furniture Interaction Framework
+- Chair Alignment
 - Character State Transitions
 
 ---
@@ -92,8 +113,7 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 
 - Bed & Sleep System
 - Doors
-- Create-a-Verse
-- Build Mode
+- Furniture
 - NPC AI
 - Relationships
 - Careers
@@ -102,6 +122,8 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 - Memories
 - Economy
 - Housing
+- Build Mode
+- Create-a-Verse
 
 ---
 
@@ -110,8 +132,8 @@ LifeVerse is an ambitious life simulation game inspired by classics like The Sim
 ████████████████░░░░ 80%
 Core Engine
 
-██████████░░░░░░░░░░ 50%
-Gameplay Systems
+██████████████████░░ 90%
+Gameplay Foundation
 
 ██░░░░░░░░░░░░░░░░░░ 10%
 World Building
@@ -130,17 +152,20 @@ Content Creation
 - Simulation
 - Needs System
 
-## ✅ Phase 2 – Gameplay Foundation
-- Character Movement
-- Third-Person Camera
-- Interaction System
-- Interaction UI
+## ✅ Phase 2 – Character Foundation
 
-## 🚧 Phase 3 – Living World
+- Third-person controller
+- Camera system
+- Character animations
+- Input System
+
+## 🚧 Phase 3 – Interaction System
+
+- Chairs
+- Beds
+- Doors
 - Furniture
-- Animations
-- Object Interactions
-- Basic House
+- Object interactions
 
 ## 📅 Phase 4 – Life Simulation
 - Careers
@@ -157,10 +182,32 @@ Content Creation
 
 ---
 
+## 📸 Development Archive
+
+The first official development milestone has been documented with screenshots and gameplay footage for future developer diaries.
+
+### Milestone 1 – Character Foundation
+
+- Hero Screenshot
+- Walking
+- Running
+- Unity Workspace
+- Player Architecture
+- Gameplay Clips
+
+---
+
 # 🛠 Engine
 
 - Unity 6
 - C#
 - Cinemachine
+- Unity Input System
 - TextMeshPro
 - Git + GitHub
+
+---
+
+## ❤️ Development
+
+LifeVerse is being developed as a long-term passion project. Every milestone, screenshot, and developer diary is archived to document the game's journey from its earliest prototype to full release.
