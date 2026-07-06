@@ -119,6 +119,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &495486372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495486373}
+  m_Layer: 0
+  m_Name: Visual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495486373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495486372}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2096651181}
+  m_Father: {fileID: 1358956580}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &620383426
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +287,6 @@ GameObject:
   - component: {fileID: 647192525}
   - component: {fileID: 647192524}
   - component: {fileID: 647192527}
-  - component: {fileID: 647192529}
   - component: {fileID: 647192528}
   m_Layer: 0
   m_Name: CinemachineCamera
@@ -364,69 +395,9 @@ MonoBehaviour:
   SuppressInputWhileBlending: 1
   IgnoreTimeScale: 0
   m_ControllerManager:
-    Controllers:
-    - Name: Look X (Pan)
-      Owner: {fileID: 647192529}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -5956279676494266862, guid: 1e06e847a5afc3f4188979c9d681dfe1, type: 3}
-        Gain: 1
-        LegacyInput: 
-        LegacyGain: 1
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
-    - Name: Look Y (Tilt)
-      Owner: {fileID: 647192529}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -5956279676494266862, guid: 1e06e847a5afc3f4188979c9d681dfe1, type: 3}
-        Gain: 1
-        LegacyInput: 
-        LegacyGain: 1
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
+    Controllers: []
   PlayerIndex: -1
   AutoEnableInputs: 1
---- !u!114 &647192529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647192523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d54399b04b4fa48a73e121d4937dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePanTilt
-  ReferenceFrame: 0
-  RecenterTarget: 0
-  PanAxis:
-    Value: 0
-    Center: 0
-    Range: {x: -180, y: 180}
-    Wrap: 1
-    Recentering:
-      Enabled: 1
-      Wait: 1
-      Time: 2
-    Restrictions: 0
-  TiltAxis:
-    Value: 0
-    Center: 0
-    Range: {x: -70, y: 70}
-    Wrap: 0
-    Recentering:
-      Enabled: 0
-      Wait: 1
-      Time: 2
-    Restrictions: 0
 --- !u!1 &925938791
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +676,7 @@ GameObject:
   - component: {fileID: 1358956583}
   - component: {fileID: 1358956584}
   - component: {fileID: 1358956585}
+  - component: {fileID: 1358956586}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -831,7 +803,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2132504685}
-  - {fileID: 2096651181}
+  - {fileID: 495486373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1358956581
@@ -904,6 +876,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373624f732e532346a8d8898143dfa3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Characters.States.CharacterStateController
+--- !u!114 &1358956586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358956575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb494912beed34c9639693495ddb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Camera.LifeVerseCameraController
+  _cameraTarget: {fileID: 2132504685}
+  _characterInput: {fileID: 1358956581}
+  _mouseSensitivity: 0.15
+  _minPitch: -35
+  _maxPitch: 70
 --- !u!1 &1465024711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1353,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1358956580}
+    m_TransformParent: {fileID: 495486373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1384,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1392,7 +1381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08b327202bf7e554287118482e325004, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

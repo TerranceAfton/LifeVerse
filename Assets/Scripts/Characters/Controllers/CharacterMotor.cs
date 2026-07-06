@@ -56,11 +56,8 @@ namespace LifeVerse.Characters.Controllers
 
             // Calculate movement direction relative to camera
             Vector3 move =
-                cameraForward * -_input.MoveInput.y +
+                cameraForward * _input.MoveInput.y +
                 cameraRight * _input.MoveInput.x;
-
-            Debug.DrawRay(transform.position, move, Color.green);
-            Debug.DrawRay(transform.position, transform.forward, Color.blue);
 
             // Rotate player toward movement direction
             /*
