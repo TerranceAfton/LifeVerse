@@ -4,6 +4,24 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
+## [Unreleased]
+
+### Added
+- CharacterInteractionController
+- SeatPoint foundation for furniture interactions
+- Player-aware interaction interface
+
+### Changed
+- Updated interaction system to pass the interacting GameObject
+- Unified character state architecture
+- Improved chair interaction workflow
+
+### Fixed
+- Removed duplicate CharacterState definitions
+- Resolved interaction controller lookup issues
+
+---
+
 ## [0.2.2] - 2026-07-06
 
 ### Added
