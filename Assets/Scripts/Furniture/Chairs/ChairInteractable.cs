@@ -1,5 +1,6 @@
 using UnityEngine;
 using LifeVerse.Interaction.Interfaces;
+using LifeVerse.Characters;
 
 namespace LifeVerse.Furniture.Chairs
 {
@@ -15,9 +16,22 @@ namespace LifeVerse.Furniture.Chairs
             return true;
         }
 
-        public void Interact()
+        public void Interact(GameObject interactor)
         {
-            Debug.Log("Player sat on the chair.");
+            Debug.Log("ChairInteractable.Interact() called.");
+
+            CharacterInteractionController interaction =
+                interactor.GetComponent<CharacterInteractionController>();
+
+            if (interaction == null)
+            {
+                Debug.Log("CharacterInteractionController NOT FOUND!");
+                return;
+            }
+
+            Debug.Log("CharacterInteractionController found.");
+
+            interaction.Sit();
         }
     }
 }

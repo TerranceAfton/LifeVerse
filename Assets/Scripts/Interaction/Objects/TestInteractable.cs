@@ -15,9 +15,9 @@ namespace LifeVerse.Interaction.Objects
             return true;
         }
 
-        public void Interact()
+        public void Interact(GameObject interactor)
         {
-            Debug.Log("Interacted with Test Cube!");
+            Debug.Log("...");
         }
     }
 }

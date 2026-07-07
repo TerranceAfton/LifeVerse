@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace LifeVerse.Interaction.Interfaces
 {
     public interface IInteractable
@@ -6,6 +8,6 @@ namespace LifeVerse.Interaction.Interfaces
 
         bool CanInteract();
 
-        void Interact();
+        void Interact(GameObject interactor);
     }
 }

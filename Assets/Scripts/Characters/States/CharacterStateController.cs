@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace LifeVerse.Characters.States
+namespace LifeVerse.Characters
 {
     /// <summary>
     /// Tracks and manages the character's current state.
