@@ -33,7 +33,7 @@ namespace LifeVerse.Interaction.Components
 
             foreach (Collider hit in hits)
             {
-                if (hit.TryGetComponent<IInteractable>(out var interactable))
+                if (hit.GetComponentInParent<IInteractable>() is IInteractable interactable)
                 {
                     CurrentInteractable = interactable;
                     return;
