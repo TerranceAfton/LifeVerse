@@ -40,7 +40,8 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - ✅ Added camera-relative movement.
 - ✅ Reorganized the player hierarchy for long-term scalability.
 - ✅ Completed Character Foundation Milestone.
-- 🚧 Developing the first interactive furniture (Chair).
+- ✅ Prototype Chair Interaction System Complete
+- 🚧 Expanding the Furniture Interaction Framework
 
 ---
 
