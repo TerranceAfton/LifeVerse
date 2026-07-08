@@ -7,22 +7,22 @@ All notable changes to LifeVerse will be documented in this file.
 ## [0.2.3] - 2026-07-08
 
 ### Added
-- Prototype Chair Interaction System
+- Furniture Interaction System v1
+- Prototype Chair Interaction
 - SeatPoint-based seating architecture
-- Sitting Idle animation state
+- Sitting Idle state
+- Stand Up interaction
 - Movement locking while seated
-- Character interaction controller integration with furniture
 
 ### Changed
-- Updated chair interaction workflow
-- Improved player interaction architecture
+- Updated character interaction workflow
+- Improved player state transitions
 - Updated Player Animator state machine
-- Improved seating state transitions
 
 ### Fixed
-- Removed automatic return to Locomotion after SitDown
-- Fixed movement while seated
-- Improved seating state management
+- Automatic return to locomotion after sitting
+- Movement while seated
+- Character state transition handling
 
 ---
 

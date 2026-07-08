@@ -38,9 +38,14 @@ namespace LifeVerse.Characters
 
         public void Stand()
         {
-            _stateController.SetState(CharacterState.Idle);
-
             _animationController?.PlayStand();
+
+            Invoke(nameof(FinishStanding), 1.0f);
+        }
+
+        private void FinishStanding()
+        {
+            _stateController.SetState(CharacterState.Idle);
 
             Debug.Log("Character stood up.");
         }

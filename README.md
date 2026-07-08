@@ -100,14 +100,22 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - SeatPoint System
 - Context Interaction UI
 
+### Furniture
+
+- Prototype Furniture Interaction System
+- Chair Interaction
+- SeatPoint System
+- Sit / Stand Interaction
+- Movement Lock While Seated
+
 ---
 
-## 🚧 Currently Developing
+### 🚧 Currently Developing
 
-- Furniture Framework
-- Sitting System
-- Chair Alignment
-- Character State Transitions
+- Furniture Framework Expansion
+- Sofa Interaction
+- Bed Interaction
+- Furniture Polish
 
 ---
 

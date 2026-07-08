@@ -1,4 +1,5 @@
 using UnityEngine;
+using LifeVerse.Characters;
 
 namespace LifeVerse.Interaction.Components
 {
@@ -9,10 +10,14 @@ namespace LifeVerse.Interaction.Components
     public class InteractionInput : MonoBehaviour
     {
         private InteractionDetector _detector;
+        private CharacterInteractionController _interactionController;
+        private CharacterStateController _stateController;
 
         private void Awake()
         {
             _detector = GetComponent<InteractionDetector>();
+            _interactionController = GetComponent<CharacterInteractionController>();
+            _stateController = GetComponent<CharacterStateController>();
         }
 
         private void Update()
@@ -28,6 +33,15 @@ namespace LifeVerse.Interaction.Components
         private void TryInteract()
         {
             Debug.Log("TryInteract");
+            
+            if (_stateController.CurrentState == CharacterState.Sitting)
+            {
+                Debug.Log("Standing up.");
+
+                _interactionController.Stand();
+
+                return;
+            }
 
             if (_detector.CurrentInteractable == null)
             {
