@@ -92,11 +92,12 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - Unity New Input System
 
 ### Interaction
+
 - Interaction Framework
-- Interaction Detection
+- Furniture Interaction System
+- Chair Interaction
+- SeatPoint System
 - Context Interaction UI
-- Keyboard Interaction (E)
-- Chair Interaction Prototype
 
 ---
 
