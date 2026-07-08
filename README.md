@@ -103,7 +103,7 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 
 ## 🚧 Currently Developing
 
-- Furniture Interaction System
+- Furniture Framework
 - Sitting System
 - Chair Alignment
 - Character State Transitions
