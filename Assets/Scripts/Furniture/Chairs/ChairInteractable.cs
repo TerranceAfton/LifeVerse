@@ -9,6 +9,9 @@ namespace LifeVerse.Furniture.Chairs
     /// </summary>
     public class ChairInteractable : MonoBehaviour, IInteractable
     {
+        [SerializeField]
+        private Transform _seatPoint;
+
         public string InteractionName => "Sit";
 
         public bool CanInteract()
@@ -29,9 +32,15 @@ namespace LifeVerse.Furniture.Chairs
                 return;
             }
 
+            if (_seatPoint == null)
+            {
+                Debug.LogError("SeatPoint has not been assigned!");
+                return;
+            }
+
             Debug.Log("CharacterInteractionController found.");
 
-            interaction.Sit();
+            interaction.Sit(_seatPoint);
         }
     }
 }

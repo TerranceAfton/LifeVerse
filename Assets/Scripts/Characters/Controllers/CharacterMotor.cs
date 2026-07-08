@@ -18,6 +18,7 @@ namespace LifeVerse.Characters.Controllers
 
         private UnityEngine.CharacterController _controller;
         private CharacterInput _input;
+        private CharacterStateController _stateController;
 
         private Vector3 _velocity;
 
@@ -25,6 +26,7 @@ namespace LifeVerse.Characters.Controllers
         {
             _controller = GetComponent<UnityEngine.CharacterController>();
             _input = GetComponent<CharacterInput>();
+            _stateController = GetComponent<CharacterStateController>();
 
             if (_animationController == null)
             {
@@ -41,6 +43,15 @@ namespace LifeVerse.Characters.Controllers
 
         private void Move()
         {
+            if (_stateController != null && _stateController.IsMovementLocked)
+            {
+                if (_animationController != null)
+                {
+                    _animationController.SetMovementSpeed(0f);
+                }
+
+                return;
+            }
             // Get camera-relative directions
             Transform cameraTransform = UnityEngine.Camera.main.transform;
 
