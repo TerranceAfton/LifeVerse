@@ -6,15 +6,18 @@ All notable changes to LifeVerse will be documented in this file.
 
 ## [Unreleased]
 
-### Added
-- CharacterInteractionController
-- SeatPoint foundation for furniture interactions
-- Player-aware interaction interface
+Added
 
-### Changed
-- Updated interaction system to pass the interacting GameObject
-- Unified character state architecture
-- Improved chair interaction workflow
+Prototype furniture interaction system
+SeatPoint-based seating
+Character interaction controller
+Sitting idle state
+Movement lock while seated
+
+Changed
+
+Unified character state handling
+Updated interaction interface to support interacting GameObjects
 
 ### Fixed
 - Removed duplicate CharacterState definitions
