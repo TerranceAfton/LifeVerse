@@ -13,6 +13,10 @@ namespace LifeVerse.Interaction.Components
 
         [SerializeField]
         private float _interactionOffset = 1.5f;
+        
+        [SerializeField]
+        [Range(0f, 180f)]
+        private float _maxInteractionAngle = 60f;
 
         public IInteractable CurrentInteractable { get; private set; }
 
@@ -38,6 +42,19 @@ namespace LifeVerse.Interaction.Components
                 if (hit.GetComponentInParent<IInteractable>() is not IInteractable interactable)
                     continue;
 
+                // Add this section
+                Vector3 directionToObject =
+                    (hit.transform.position - transform.position).normalized;
+
+                float angle =
+                    Vector3.Angle(transform.forward, directionToObject);
+
+                if (angle > _maxInteractionAngle)
+                {
+                    continue;
+                }
+
+                // Existing code
                 float distance =
                     Vector3.Distance(transform.position, hit.transform.position);
 
@@ -51,12 +68,32 @@ namespace LifeVerse.Interaction.Components
 
         private void OnDrawGizmosSelected()
         {
-            Gizmos.color = Color.green;
-
             Vector3 center =
                 transform.position + transform.forward * _interactionOffset;
 
+            // Interaction sphere
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(center, _interactionRadius);
+
+            // Forward direction
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(
+                transform.position,
+                transform.position + transform.forward * (_interactionOffset + _interactionRadius));
+
+            // Current interactable
+            if (CurrentInteractable is MonoBehaviour interactable)
+            {
+                Gizmos.color = Color.yellow;
+
+                Gizmos.DrawLine(
+                    transform.position,
+                    interactable.transform.position);
+
+                Gizmos.DrawWireSphere(
+                    interactable.transform.position,
+                    0.15f);
+            }
         }
     }
 }

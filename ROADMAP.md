@@ -17,6 +17,7 @@
 - [x] Third-Person Camera
 - [x] Interaction System
 - [x] Interaction UI
+- [x] Interaction System v2
 - [x] Mixamo Character
 - [x] Animation System
 - [x] Blend Tree
@@ -24,12 +25,16 @@
 ---
 
 ## 🚧 Phase 3 - Living World
-- [ ] Character State System
-- [ ] Sitting System
-- [ ] Interactive Chairs
-- [ ] Beds
-- [ ] Doors
+- [x] Character State System
+- [x] Sitting System
+- [x] Interactive Chairs
+- [x] Interactive Doors
 - [ ] Furniture Framework
+- [ ] Beds
+- [ ] Sofas
+- [ ] Benches
+- [ ] Tables
+- [ ] Interactive Lights
 
 ---
 
@@ -39,6 +44,7 @@
 - [ ] Memories
 - [ ] Personality
 - [ ] Skills
+- [ ] Daily Schedules
 
 ---
 
@@ -48,6 +54,7 @@
 - [ ] Careers
 - [ ] Economy
 - [ ] Vehicles
+- [ ] Build Mode
 
 ---
 

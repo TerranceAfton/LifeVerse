@@ -108,6 +108,18 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - Sit / Stand Interaction
 - Movement Lock While Seated
 
+### Interaction System v2
+- Improved interactable detection
+- Parent object interaction support
+- Closest interactable selection
+- Interaction angle filtering
+- Dynamic interaction prompts
+- Interaction debugging visualization
+
+### Current Interactive Objects
+- Chair
+- Door
+
 ---
 
 ### 🚧 Currently Developing

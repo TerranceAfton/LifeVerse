@@ -4,6 +4,19 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
+## [0.2.4] - 2026-07-09
+
+### Added
+- Interaction System v2
+- Interaction angle filtering
+- Closest interactable selection
+- Interaction debug visualization
+
+### Improved
+- Interaction detection accuracy
+- Multi-object interaction support
+- Developer debugging tools
+
 ## [0.2.3] - 2026-07-08
 
 ### Added
