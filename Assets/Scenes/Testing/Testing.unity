@@ -429,6 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Furniture.Doors.DoorInteractable
   _door: {fileID: 1986710318}
   _openAngle: 90
+  _openSpeed: 3
 --- !u!4 &698472229
 Transform:
   m_ObjectHideFlags: 0
@@ -438,7 +439,7 @@ Transform:
   m_GameObject: {fileID: 698472227}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11137, y: 1.22521, z: 2.3714}
+  m_LocalPosition: {x: 4, y: 1, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1413,7 +1414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1931391188
 BoxCollider:
   m_ObjectHideFlags: 0

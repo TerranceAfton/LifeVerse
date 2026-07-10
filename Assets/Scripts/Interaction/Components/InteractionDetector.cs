@@ -31,12 +31,20 @@ namespace LifeVerse.Interaction.Components
             Collider[] hits =
                 Physics.OverlapSphere(center, _interactionRadius);
 
+            float closestDistance = float.MaxValue;
+
             foreach (Collider hit in hits)
             {
-                if (hit.GetComponentInParent<IInteractable>() is IInteractable interactable)
+                if (hit.GetComponentInParent<IInteractable>() is not IInteractable interactable)
+                    continue;
+
+                float distance =
+                    Vector3.Distance(transform.position, hit.transform.position);
+
+                if (distance < closestDistance)
                 {
+                    closestDistance = distance;
                     CurrentInteractable = interactable;
-                    return;
                 }
             }
         }
