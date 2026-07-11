@@ -43,11 +43,31 @@ namespace LifeVerse.Characters
             Invoke(nameof(FinishStanding), 1.0f);
         }
 
+        public void Sleep(Transform sleepPoint)
+        {
+            // Move player onto the bed.
+            transform.position = sleepPoint.position;
+
+            // Face the correct direction.
+            transform.rotation = sleepPoint.rotation;
+
+            // Change state.
+            _stateController.SetState(CharacterState.Sleeping);
+
+            Debug.Log("Character started sleeping.");
+        }
+
         private void FinishStanding()
         {
             _stateController.SetState(CharacterState.Idle);
 
             Debug.Log("Character stood up.");
+        }
+        public void WakeUp()
+        {
+            _stateController.SetState(CharacterState.Idle);
+
+            Debug.Log("Character woke up.");
         }
     }
 }

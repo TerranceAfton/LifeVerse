@@ -33,12 +33,23 @@ namespace LifeVerse.Interaction.Components
         private void TryInteract()
         {
             Debug.Log("TryInteract");
-            
+
+            // Stand up if currently sitting.
             if (_stateController.CurrentState == CharacterState.Sitting)
             {
                 Debug.Log("Standing up.");
 
                 _interactionController.Stand();
+
+                return;
+            }
+
+            // Wake up if currently sleeping.
+            if (_stateController.CurrentState == CharacterState.Sleeping)
+            {
+                Debug.Log("Waking up.");
+
+                _interactionController.WakeUp();
 
                 return;
             }

@@ -4,6 +4,34 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
+## [0.2.5] - 2026-07-11
+
+### Added
+
+- Introduced the Furniture Framework.
+- Added `SeatingInteractable` base class.
+- Added `BenchInteractable`.
+- Added `SofaInteractable`.
+- Added `BedInteractable`.
+- Added sleeping interaction.
+- Added wake up interaction.
+- Added `Sleep()` to `CharacterInteractionController`.
+- Added `WakeUp()` to `CharacterInteractionController`.
+
+### Changed
+
+- Refactored `ChairInteractable` to inherit from `SeatingInteractable`.
+- Improved furniture interaction architecture.
+- Expanded reusable interaction framework for future seating furniture.
+
+### Tested
+
+- Verified chair interactions.
+- Verified bench interactions.
+- Verified sofa interactions.
+- Verified bed interactions.
+- Verified sleep and wake interaction cycle.
+
 ## [0.2.4] - 2026-07-09
 
 ### Added
