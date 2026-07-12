@@ -1,6 +1,6 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-              LIFEVERSE
+              LifeVerse™
 
       Build • Live • Create • Thrive
 
