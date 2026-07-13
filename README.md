@@ -11,37 +11,36 @@ A Next-Generation Life Simulation Game
 ![Unity](https://img.shields.io/badge/Unity-6-black)
 ![C#](https://img.shields.io/badge/C%23-.NET-purple)
 ![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
-![Version](https://img.shields.io/badge/Version-v0.2-blue)
+![Version](https://img.shields.io/badge/Version-v0.2.6-blue)
 
 # 🌎 LifeVerse
 
 **A next-generation life simulation game built with Unity 6.**
 
-LifeVerse is an ambitious life simulation game inspired by classics like The Sims while introducing deeper AI, realistic life progression, advanced personalities, dynamic relationships, careers, memories, and an interactive open world.
+LifeVerse is an ambitious life simulation game inspired by classics like **The Sims** while introducing deeper AI, realistic life progression, advanced personalities, dynamic relationships, careers, memories, and an interactive open world.
 
 ---
 
-## Vision
+## 🌟 Vision
 
-LifeVerse aims to become a living, evolving life simulation where every character has meaningful routines, relationships, memories, ambitions, and choices in a dynamic world shaped by both the player and its inhabitants.
+LifeVerse aims to become a living, evolving life simulation where every character has meaningful routines, relationships, memories, ambitions, and choices inside a dynamic world shaped by both the player and its inhabitants.
 
 ---
 
-> ⚠️ LifeVerse is currently in active pre-alpha development.
+> ⚠️ **LifeVerse is currently in active pre-alpha development.**
+>
 > Features, systems, and roadmap items are subject to change as development progresses.
 
 ---
 
-## 🚀 Recent Milestones
+# 🚀 Recent Milestones
 
-- ✅ Completed the third-person character controller.
-- ✅ Built the LifeVerse Camera Controller.
-- ✅ Migrated fully to Unity's New Input System.
-- ✅ Added camera-relative movement.
-- ✅ Reorganized the player hierarchy for long-term scalability.
-- ✅ Completed Character Foundation Milestone.
-- ✅ Prototype Chair Interaction System Complete
-- 🚧 Expanding the Furniture Interaction Framework
+- ✅ Completed the Furniture Framework.
+- ✅ Added Chair, Bench, Sofa, and Bed interactions.
+- ✅ Implemented the Sleep System Foundation.
+- ✅ Added simulation time acceleration while sleeping.
+- ✅ Refactored the interaction architecture for reusable furniture systems.
+- 🚧 Currently expanding the Sleep System with gameplay mechanics.
 
 ---
 
@@ -49,93 +48,101 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 
 ## Current Version
 
-**Prototype v0.2 (Pre-Alpha)**
+**Prototype v0.2.6 (Pre-Alpha)**
 
-### Last Completed Milestone
+### Latest Completed Milestone
 
-🏆 Character Foundation
+🏆 **Sleep System Foundation**
 
 ### Current Development
 
-🚧 Interaction System
+🚧 **Sleep System v2**
 
 ---
 
-## ✅ Completed
+# ✅ Completed
 
-### Core Engine
+## Core Engine
+
 - Bootstrap System
 - Service Registry
 - Scene Management
 - Configuration System
 - Logging System
 
-### Character System
+## Character System
+
 - Character Framework
 - Character Manager
-- Character State System (Foundation)
+- Character State System
+- Character Interaction Controller
 
-### Simulation
-- Time System
+## Simulation
+
+- Time Service
 - Needs System
 - Simulation Manager
+- Simulation Time Acceleration
 
-### Player
+## Player
+
 - Third-Person Character Controller
 - Camera Relative Movement
 - Sprinting
 - Gravity
 - Cinemachine Camera
-- Mixamo Character Integration
+- Mixamo Character Integration *(Temporary Placeholder)*
 - Animation Controller
 - Blend Tree (Idle / Walk / Run)
 - LifeVerse Camera Controller
 - Unity New Input System
 
-### Interaction
+## Interaction
 
 - Interaction Framework
-- Furniture Interaction System
-- Chair Interaction
-- SeatPoint System
+- Interaction System v2
+- Interaction Detector
 - Context Interaction UI
+- Parent Object Detection
+- Closest Interactable Selection
+- Interaction Angle Filtering
+- Debug Visualization
 
-### Furniture
+## Furniture
 
-- Prototype Furniture Interaction System
+- Furniture Framework
+- SeatingInteractable
 - Chair Interaction
-- SeatPoint System
+- Bench Interaction
+- Sofa Interaction
+- Bed Interaction
 - Sit / Stand Interaction
-- Movement Lock While Seated
+- Sleep / Wake Up Interaction
+- Simulation Time Acceleration
 
-### Interaction System v2
-- Improved interactable detection
-- Parent object interaction support
-- Closest interactable selection
-- Interaction angle filtering
-- Dynamic interaction prompts
-- Interaction debugging visualization
+## Current Interactive Objects
 
-### Current Interactive Objects
 - Chair
+- Bench
+- Sofa
+- Bed
 - Door
 
 ---
 
-### 🚧 Currently Developing
+# 🚧 Currently Developing
 
-- Furniture Framework Expansion
-- Sofa Interaction
-- Bed Interaction
-- Furniture Polish
+- Sleep Animation
+- Sleeping Loop Animation
+- Wake Up Animation
+- Energy Recovery During Sleep
+- Wake-Up Time Selection
+- Alarm Clock Support
 
 ---
 
-## 📅 Upcoming Features
+# 📅 Upcoming Features
 
-- Bed & Sleep System
-- Doors
-- Furniture
 - NPC AI
 - Relationships
 - Careers
@@ -146,76 +153,51 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - Housing
 - Build Mode
 - Create-a-Verse
+- Vehicles
+- Weather
+- Seasons
 
 ---
 
 # 📊 Development Progress
 
-████████████████░░░░ 80%
-Core Engine
+```
+████████████████████ 100%
+Engine Foundation
 
-██████████████████░░ 90%
+████████████████████ 100%
 Gameplay Foundation
 
-██░░░░░░░░░░░░░░░░░░ 10%
-World Building
+██████████████████░░ 90%
+Interaction & Furniture
+
+███░░░░░░░░░░░░░░░░░ 15%
+Living World
 
 ░░░░░░░░░░░░░░░░░░░░
 Content Creation
+```
 
 ---
 
 # 🗺️ Development Roadmap
 
-## ✅ Phase 1 – Engine Foundation
-- Bootstrap
-- Service Architecture
-- Character Framework
-- Simulation
-- Needs System
+The complete project roadmap is maintained in **ROADMAP.md**.
 
-## ✅ Phase 2 – Character Foundation
-
-- Third-person controller
-- Camera system
-- Character animations
-- Input System
-
-## 🚧 Phase 3 – Interaction System
-
-- Chairs
-- Beds
-- Doors
-- Furniture
-- Object interactions
-
-## 📅 Phase 4 – Life Simulation
-- Careers
-- Relationships
-- Personality
-- Memories
-- Skills
-
-## 📅 Phase 5 – World Expansion
-- Neighborhoods
-- Vehicles
-- Businesses
-- Multiplayer (Future)
+The roadmap is updated after every major milestone and GitHub release.
 
 ---
 
-## 📸 Development Archive
+# 📸 Development Archive
 
-The first official development milestone has been documented with screenshots and gameplay footage for future developer diaries.
+Major milestones are documented throughout development and include:
 
-### Milestone 1 – Character Foundation
-
-- Hero Screenshot
-- Walking
-- Running
-- Unity Workspace
-- Player Architecture
-- Gameplay Clips
+- Development Logs
+- GitHub Releases
+- Changelog
+- Screenshots
+- Gameplay Videos
+- Developer Diaries
 
 ---
 
@@ -226,10 +208,36 @@ The first official development milestone has been documented with screenshots an
 - Cinemachine
 - Unity Input System
 - TextMeshPro
-- Git + GitHub
+- Git
+- GitHub
 
 ---
 
-## ❤️ Development
+# 📚 Documentation
 
-LifeVerse is being developed as a long-term passion project. Every milestone, screenshot, and developer diary is archived to document the game's journey from its earliest prototype to full release.
+The project documentation includes:
+
+- Engine Architecture
+- Character System
+- Interaction System
+- Furniture Framework
+- Development Logs
+- Changelog
+- Roadmap
+
+---
+
+# ❤️ Development
+
+LifeVerse is a long-term passion project being developed completely in public.
+
+Every major milestone is documented through:
+
+- 📖 Development Logs
+- 📦 GitHub Releases
+- 📝 Changelog Updates
+- 🗺️ Roadmap Updates
+- 🎥 YouTube Development Videos
+- 💬 Community Progress Updates
+
+The goal is to document the complete journey of building a modern life simulation game from the ground up while sharing every milestone with the community.

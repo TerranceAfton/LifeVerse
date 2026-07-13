@@ -38,6 +38,8 @@
 - [x] Sit Animation
 - [x] Stand Animation
 
+> *Current animations are temporary placeholders and will be replaced with higher-quality animations during the polish phase.*
+
 ## Simulation
 - [x] Needs System
 
@@ -59,7 +61,7 @@
 
 ---
 
-# 🚧 Phase 4 – Furniture Framework
+# ✅ Phase 4 – Furniture Framework
 
 ## Furniture Framework
 - [x] FurnitureInteractable
@@ -71,22 +73,23 @@
 - [x] SofaInteractable
 
 ## Bedroom
-- [x] BedInteractable (Prototype)
+- [x] BedInteractable
 - [x] Sleep Interaction
 - [x] Wake Up Interaction
 - [ ] Sleep Animation
-- [ ] Sleeping Loop
+- [ ] Sleeping Loop Animation
 - [ ] Wake Up Animation
-- [ ] Time Acceleration
-- [ ] Needs Recovery During Sleep
+- [x] Simulation Time Acceleration
+- [ ] Energy Recovery During Sleep
 - [ ] Wake-Up Time Selection
+- [ ] Alarm Clock Support
 
 ## Interactive Furniture
 - [x] Interactive Chairs
 - [x] Interactive Benches
 - [x] Interactive Sofas
 - [x] Interactive Doors
-- [x] Interactive Beds (Prototype)
+- [x] Interactive Beds
 
 ## Future Furniture
 - [ ] Dining Chairs
@@ -177,6 +180,7 @@
 # 🌟 Phase 8 – Polish
 
 ## Visuals
+- [ ] Replace Placeholder Character Animations
 - [ ] Replace Placeholder Models
 - [ ] Improved Character Models
 - [ ] Environment Art
@@ -210,21 +214,20 @@
 
 # 🚀 Current Sprint
 
-## Sprint 5 – Furniture Framework
+## Sprint 6 – Sleep System v2
 
-### Completed
-- [x] SeatingInteractable
-- [x] ChairInteractable Refactor
-- [x] BenchInteractable
-- [x] SofaInteractable
-- [x] BedInteractable Prototype
+### ✅ Completed
+- [x] BedInteractable
 - [x] Sleep Interaction
 - [x] Wake Up Interaction
+- [x] Simulation Time Acceleration
+- [x] Character State Synchronization
+- [x] Bed Interaction Refactor
 
-### In Progress
+### 🚧 In Progress
 - [ ] Sleep Animation
-- [ ] Sleeping Idle Animation
+- [ ] Sleeping Loop Animation
 - [ ] Wake Up Animation
-- [ ] Time Acceleration
-- [ ] Needs Recovery
-- [ ] Wake-Up Scheduling
+- [ ] Energy Recovery During Sleep
+- [ ] Wake-Up Time Selection
+- [ ] Alarm Clock Support

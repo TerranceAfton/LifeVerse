@@ -4,6 +4,35 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
+## [0.2.6] - 2026-07-13
+
+### Added
+
+- Integrated sleep system with the Time Service.
+- Added simulation time acceleration while sleeping.
+- Added automatic return to normal simulation speed when waking up.
+
+### Changed
+
+- Refactored `BedInteractable` to use `CharacterStateController` as the single source of truth.
+- Removed redundant sleep state tracking from `BedInteractable`.
+- Improved sleep interaction architecture.
+- Improved simulation time integration for future gameplay systems.
+
+### Fixed
+
+- Fixed bed interaction requiring multiple wake-up interactions.
+- Fixed sleep state synchronization between the character and bed.
+- Fixed interaction state inconsistencies during sleep and wake transitions.
+
+### Tested
+
+- Verified sleep interaction.
+- Verified wake up interaction.
+- Verified simulation time acceleration while sleeping.
+- Verified simulation time returns to normal after waking.
+- Verified repeated sleep and wake interaction cycle.
+
 ## [0.2.5] - 2026-07-11
 
 ### Added
