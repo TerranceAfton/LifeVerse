@@ -1,4 +1,6 @@
 using UnityEngine;
+using LifeVerse.Core;
+using LifeVerse.Time;
 
 namespace LifeVerse.Characters
 {
@@ -54,6 +56,22 @@ namespace LifeVerse.Characters
             // Change state.
             _stateController.SetState(CharacterState.Sleeping);
 
+            // Speed up the simulation.
+            TimeService timeService = ServiceRegistry.Get<TimeService>();
+
+            if (timeService != null)
+            {
+                Debug.Log("Setting time scale to UltraFast");
+
+                timeService.SetTimeScale(TimeScale.UltraFast);
+
+                Debug.Log("Current Time Scale: " + timeService.CurrentTimeScale);
+            }
+            else
+            {
+                Debug.LogError("TimeService not found!");
+            }
+
             Debug.Log("Character started sleeping.");
         }
 
@@ -66,6 +84,14 @@ namespace LifeVerse.Characters
         public void WakeUp()
         {
             _stateController.SetState(CharacterState.Idle);
+
+            // Return the simulation to normal speed.
+            TimeService timeService = ServiceRegistry.Get<TimeService>();
+
+            if (timeService != null)
+            {
+                timeService.SetTimeScale(TimeScale.Normal);
+            }
 
             Debug.Log("Character woke up.");
         }

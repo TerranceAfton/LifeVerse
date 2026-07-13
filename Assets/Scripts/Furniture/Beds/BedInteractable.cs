@@ -12,10 +12,7 @@ namespace LifeVerse.Furniture.Beds
         [SerializeField]
         private Transform _sleepPoint;
 
-        private bool _isSleeping;
-
-        public string InteractionName =>
-            _isSleeping ? "Wake Up" : "Sleep";
+        public string InteractionName => "Sleep";
 
         public bool CanInteract()
         {
@@ -33,13 +30,16 @@ namespace LifeVerse.Furniture.Beds
             CharacterInteractionController interaction =
                 interactor.GetComponent<CharacterInteractionController>();
 
-            if (interaction == null)
+            CharacterStateController stateController =
+                interactor.GetComponent<CharacterStateController>();
+
+            if (interaction == null || stateController == null)
             {
-                Debug.LogError("CharacterInteractionController not found!");
+                Debug.LogError("Required character components not found!");
                 return;
             }
 
-            if (_isSleeping)
+            if (stateController.CurrentState == CharacterState.Sleeping)
             {
                 interaction.WakeUp();
             }
@@ -47,8 +47,6 @@ namespace LifeVerse.Furniture.Beds
             {
                 interaction.Sleep(_sleepPoint);
             }
-
-            _isSleeping = !_isSleeping;
         }
     }
 }

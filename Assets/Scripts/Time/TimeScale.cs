@@ -9,10 +9,10 @@ namespace LifeVerse.Time
 
         Normal = 1,
 
-        Fast = 2,
+        Fast = 3,
 
-        VeryFast = 3,
+        VeryFast = 6,
 
-        Ultra = 4
+        UltraFast = 20
     }
 }
