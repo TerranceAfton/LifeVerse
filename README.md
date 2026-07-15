@@ -11,7 +11,7 @@ A Next-Generation Life Simulation Game
 ![Unity](https://img.shields.io/badge/Unity-6-black)
 ![C#](https://img.shields.io/badge/C%23-.NET-purple)
 ![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
-![Version](https://img.shields.io/badge/Version-v0.2.6-blue)
+![Version](https://img.shields.io/badge/Version-v0.2.7-blue)
 
 # 🌎 LifeVerse
 
@@ -33,14 +33,15 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 
 ---
 
-# 🚀 Recent Milestones
+## 🚀 Recent Milestones
 
-- ✅ Completed the Furniture Framework.
-- ✅ Added Chair, Bench, Sofa, and Bed interactions.
-- ✅ Implemented the Sleep System Foundation.
-- ✅ Added simulation time acceleration while sleeping.
-- ✅ Refactored the interaction architecture for reusable furniture systems.
-- 🚧 Currently expanding the Sleep System with gameplay mechanics.
+- ✅ Completed the Furniture Framework foundation
+- ✅ Added fully interactive chairs, benches, and sofas
+- ✅ Implemented the Bed & Sleep Framework
+- ✅ Added Energy recovery while sleeping
+- ✅ Added Time Acceleration during sleep
+- ✅ Synchronized gameplay and simulation character states
+- 🚧 Beginning animation polish for the Sleep System
 
 ---
 
@@ -48,15 +49,15 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 
 ## Current Version
 
-**Prototype v0.2.6 (Pre-Alpha)**
+**Prototype v0.2.7 (Pre-Alpha)**
 
-### Latest Completed Milestone
+### Last Completed Milestone
 
-🏆 **Sleep System Foundation**
+🏆 Bed & Sleep Framework
 
 ### Current Development
 
-🚧 **Sleep System v2**
+🚧 Sleep Animation System
 
 ---
 
@@ -108,17 +109,18 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - Interaction Angle Filtering
 - Debug Visualization
 
-## Furniture
+### Furniture
 
-- Furniture Framework
-- SeatingInteractable
-- Chair Interaction
-- Bench Interaction
-- Sofa Interaction
-- Bed Interaction
-- Sit / Stand Interaction
-- Sleep / Wake Up Interaction
-- Simulation Time Acceleration
+- Furniture Interaction Framework
+- Interactive Chairs
+- Interactive Benches
+- Interactive Sofas
+- Interactive Doors
+- Interactive Beds (Prototype)
+- Sleep Interaction
+- Wake-Up Interaction
+- Time Acceleration During Sleep
+- Energy Recovery During Sleep
 
 ## Current Interactive Objects
 
@@ -130,19 +132,24 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 
 ---
 
-# 🚧 Currently Developing
+### 🚧 Currently Developing
 
 - Sleep Animation
-- Sleeping Loop Animation
-- Wake Up Animation
-- Energy Recovery During Sleep
+- Sleeping Idle Animation
+- Wake-Up Animation
 - Wake-Up Time Selection
-- Alarm Clock Support
+- Furniture Framework Expansion
 
 ---
 
-# 📅 Upcoming Features
+## 📅 Upcoming Features
 
+- Dining Chairs
+- Office Chairs
+- Tables
+- TVs
+- Lights
+- Refrigerators
 - NPC AI
 - Relationships
 - Careers
@@ -153,30 +160,25 @@ LifeVerse aims to become a living, evolving life simulation where every characte
 - Housing
 - Build Mode
 - Create-a-Verse
-- Vehicles
-- Weather
-- Seasons
 
 ---
 
 # 📊 Development Progress
 
-```
-████████████████████ 100%
-Engine Foundation
+████████████████████░ 100%
+Core Engine
 
-████████████████████ 100%
+████████████████████░ 100%
 Gameplay Foundation
 
-██████████████████░░ 90%
+██████████████░░░░░░ 70%
 Interaction & Furniture
 
-███░░░░░░░░░░░░░░░░░ 15%
-Living World
+██████░░░░░░░░░░░░░░ 30%
+Life Simulation
 
-░░░░░░░░░░░░░░░░░░░░
-Content Creation
-```
+██░░░░░░░░░░░░░░░░░░ 10%
+World Systems
 
 ---
 

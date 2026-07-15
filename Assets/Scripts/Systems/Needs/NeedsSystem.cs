@@ -35,9 +35,36 @@ namespace LifeVerse.Simulation.Systems.Needs
 
             foreach (Character character in _characterManager.Characters)
             {
-                character.Needs.Tick(
-                    deltaTime *
-                    _settings.GlobalDecayMultiplier);
+                if (character.State == CharacterState.Sleeping)
+                {
+                    character.Needs.Increase(
+                        NeedType.Energy,
+                        _settings.SleepRecoveryRate * deltaTime);
+
+                    character.Needs.Hunger.Tick(
+                        deltaTime * _settings.GlobalDecayMultiplier);
+
+                    character.Needs.Bladder.Tick(
+                        deltaTime * _settings.GlobalDecayMultiplier);
+
+                    character.Needs.Fun.Tick(
+                        deltaTime * _settings.GlobalDecayMultiplier);
+
+                    character.Needs.Social.Tick(
+                        deltaTime * _settings.GlobalDecayMultiplier);
+
+                    character.Needs.Comfort.Tick(
+                        deltaTime * _settings.GlobalDecayMultiplier);
+
+                    character.Needs.Environment.Tick(
+                        deltaTime * _settings.GlobalDecayMultiplier);
+                }
+                else
+                {
+                    character.Needs.Tick(
+                        deltaTime *
+                        _settings.GlobalDecayMultiplier);
+                }
 
                 CheckCriticalNeeds(character);
             }

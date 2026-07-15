@@ -4,6 +4,30 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
+## [0.2.7] - 2026-07-14
+## Added
+- Bed sleeping framework
+- Wake-up interaction
+- Energy recovery while sleeping
+- Character state synchronization with simulation
+- Time acceleration during sleep
+
+## Improved
+- Needs System sleep behavior
+- Character interaction flow
+- Simulation integration
+- Time Service integration
+
+## Fixed
+- Character state synchronization
+- Sleep state detection
+- Needs simulation during sleep
+
+## Cleanup
+- Removed temporary debugging
+- Cleaned simulation logging
+- Cleaned TimeService logging
+
 ## [0.2.6] - 2026-07-13
 
 ### Added

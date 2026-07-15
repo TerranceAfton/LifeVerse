@@ -22,11 +22,22 @@ public class CharacterSimulationTest : MonoBehaviour
         }
 
         CharacterProfile profile = new CharacterProfile(
-    new CharacterName("Alex", "Walker"),
-    CharacterAge.YoungAdult,
-    CharacterGender.Male);
+            new CharacterName("Alex", "Walker"),
+            CharacterAge.YoungAdult,
+            CharacterGender.Male);
 
         _character = manager.CreateCharacter(profile);
+
+        CharacterReference characterReference =
+            FindFirstObjectByType<CharacterReference>();
+
+        if (characterReference == null)
+        {
+            Debug.LogError("CharacterReference not found.");
+            return;
+        }
+
+        characterReference.Initialize(_character);
     }
 
     private void Update()
@@ -41,12 +52,8 @@ public class CharacterSimulationTest : MonoBehaviour
 
         _timer = 0f;
 
-        Debug.Log("--------------------------------");
-
-        // Debug.Log($"Hunger: {_character.Needs.GetValue(NeedType.Hunger):F1}");
-        // Debug.Log($"Energy: {_character.Needs.GetValue(NeedType.Energy):F1}");
-        // Debug.Log($"Fun: {_character.Needs.GetValue(NeedType.Fun):F1}");
-        // Debug.Log($"Social: {_character.Needs.GetValue(NeedType.Social):F1}");
+        Debug.Log(
+            $"Energy: {_character.Needs.GetValue(NeedType.Energy):F1} | " +
+            $"Hunger: {_character.Needs.GetValue(NeedType.Hunger):F1}");
     }
 }
-// Debug.Log($"Created Character: {_character.Profile.Name.FullName}");

@@ -80,7 +80,7 @@
 - [ ] Sleeping Loop Animation
 - [ ] Wake Up Animation
 - [x] Simulation Time Acceleration
-- [ ] Energy Recovery During Sleep
+- [x] Energy Recovery During Sleep
 - [ ] Wake-Up Time Selection
 - [ ] Alarm Clock Support
 

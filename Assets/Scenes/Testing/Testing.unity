@@ -1169,6 +1169,7 @@ GameObject:
   - component: {fileID: 1358956585}
   - component: {fileID: 1358956586}
   - component: {fileID: 1358956587}
+  - component: {fileID: 1358956588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1398,6 +1399,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d0c2b67c2c43d499755c6f05b20635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Characters.CharacterInteractionController
+--- !u!114 &1358956588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358956575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56792e3f91de1804a9f16a5a3f888c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeVerse.Characters.CharacterReference
 --- !u!1 &1465024711
 GameObject:
   m_ObjectHideFlags: 0

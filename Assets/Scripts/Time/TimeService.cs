@@ -102,7 +102,8 @@ namespace LifeVerse.Time
 
         public void SetTimeScale(TimeScale scale)
         {
-            Debug.Log($"Changing Time Scale from {CurrentTimeScale} to {scale}");
+            Debug.Log(
+                $"Changing Time Scale from {CurrentTimeScale} to {scale}");
 
             CurrentTimeScale = scale;
         }
