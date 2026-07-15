@@ -4,6 +4,31 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
+## [Unreleased]
+
+### Added
+
+- Gameplay UI Framework
+- UIManager
+- UIWindow
+- UIElement
+- UIWindowType
+- SleepWindow prototype
+- Initial window management system
+
+### Improved
+
+- Introduced reusable UI architecture
+- Added centralized window management
+- Established common UI lifecycle
+- Improved project organization for future UI systems
+
+### Testing
+
+- Added temporary UI framework testing
+- Verified window open and close functionality
+- Validated first gameplay window implementation
+
 ## [0.2.7] - 2026-07-14
 ## Added
 - Bed sleeping framework

@@ -73,16 +73,15 @@
 - [x] SofaInteractable
 
 ## Bedroom
-- [x] BedInteractable
+- [x] BedInteractable (Prototype)
 - [x] Sleep Interaction
 - [x] Wake Up Interaction
+- [x] Time Acceleration
+- [x] Needs Recovery During Sleep
 - [ ] Sleep Animation
-- [ ] Sleeping Loop Animation
+- [ ] Sleeping Loop
 - [ ] Wake Up Animation
-- [x] Simulation Time Acceleration
-- [x] Energy Recovery During Sleep
 - [ ] Wake-Up Time Selection
-- [ ] Alarm Clock Support
 
 ## Interactive Furniture
 - [x] Interactive Chairs
@@ -214,20 +213,61 @@
 
 # 🚀 Current Sprint
 
-## Sprint 6 – Sleep System v2
+## Sprint 6 – Gameplay UI Framework
 
 ### ✅ Completed
-- [x] BedInteractable
-- [x] Sleep Interaction
-- [x] Wake Up Interaction
-- [x] Simulation Time Acceleration
-- [x] Character State Synchronization
-- [x] Bed Interaction Refactor
+
+- [x] UI Folder Structure
+- [x] UIWindowType
+- [x] UIElement
+- [x] UIWindow
+- [x] UIManager
+- [x] SleepWindow Prototype
+- [x] UI Framework Testing
 
 ### 🚧 In Progress
-- [ ] Sleep Animation
-- [ ] Sleeping Loop Animation
-- [ ] Wake Up Animation
-- [ ] Energy Recovery During Sleep
-- [ ] Wake-Up Time Selection
-- [ ] Alarm Clock Support
+
+- [ ] Prompt System
+- [ ] Notification System
+- [ ] HUD Framework
+- [ ] Sleep Menu
+- [ ] Inventory Window
+- [ ] Phone Interface
+
+---
+
+## Future UI Systems
+
+### Core
+
+- [x] UIWindowType
+- [x] UIElement
+- [x] UIWindow
+- [x] UIManager
+
+### Windows
+
+- [x] SleepWindow
+- [ ] InventoryWindow
+- [ ] PhoneWindow
+- [ ] SettingsWindow
+- [ ] CareerWindow
+- [ ] RelationshipWindow
+- [ ] BuildModeWindow
+- [ ] CreateAVerseWindow
+
+### HUD
+
+- [ ] Needs HUD
+- [ ] Clock
+- [ ] Money Display
+- [ ] Notifications
+- [ ] Active Interaction Prompt
+
+### Widgets
+
+- [ ] Progress Bars
+- [ ] Buttons
+- [ ] Tooltips
+- [ ] Icons
+- [ ] Scroll Views
