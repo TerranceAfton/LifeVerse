@@ -1,12 +1,13 @@
-using TMPro;
 using UnityEngine;
 using LifeVerse.Interaction.Components;
+using LifeVerse.Interaction.Interfaces;
+using LifeVerse.UI.Prompts;
 
 namespace LifeVerse.Interaction.UI
 {
     /// <summary>
-    /// Displays the interaction prompt when the player
-    /// is near an interactable object.
+    /// Controls the interaction prompt based on the
+    /// currently detected interactable.
     /// </summary>
     public class InteractionPromptUI : MonoBehaviour
     {
@@ -14,26 +15,56 @@ namespace LifeVerse.Interaction.UI
         private InteractionDetector _detector;
 
         [SerializeField]
-        private GameObject _promptRoot;
+        private InteractionPrompt _interactionPrompt;
 
-        [SerializeField]
-        private TMP_Text _promptText;
+        private IInteractable _currentInteractable;
+        private string _currentInteractionName;
+
+        private void Awake()
+        {
+            if (_interactionPrompt != null)
+            {
+                _interactionPrompt.Hide();
+            }
+        }
 
         private void Update()
         {
-            if (_detector == null)
+            if (_detector == null || _interactionPrompt == null)
                 return;
 
-            if (_detector.CurrentInteractable == null)
+            IInteractable interactable = _detector.CurrentInteractable;
+
+            // Nothing detected.
+            if (interactable == null)
             {
-                _promptRoot.SetActive(false);
+                if (_currentInteractable != null)
+                {
+                    _currentInteractable = null;
+                    _currentInteractionName = string.Empty;
+                    _interactionPrompt.Hide();
+                }
+
                 return;
             }
 
-            _promptRoot.SetActive(true);
+            string interactionName = interactable.InteractionName;
 
-            _promptText.text =
-                $"[E] {_detector.CurrentInteractable.InteractionName}";
+            // Only update if the interactable OR its interaction name changed.
+            if (interactable == _currentInteractable &&
+                interactionName == _currentInteractionName)
+            {
+                return;
+            }
+
+            _currentInteractable = interactable;
+            _currentInteractionName = interactionName;
+
+            PromptData data = new PromptData(
+                "E",
+                interactionName);
+
+            _interactionPrompt.Show(data);
         }
     }
 }

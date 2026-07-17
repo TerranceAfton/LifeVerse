@@ -1,273 +1,345 @@
-# 🌎 LifeVerse Roadmap
+# LifeVerse Roadmap
 
-> **Vision:** Build a living life simulation where every character has needs, memories, relationships, careers, schedules, and personalities inside a fully interactive world.
-
----
-
-# ✅ Phase 1 – Engine Foundation
-
-## Core Engine
-- [x] Bootstrap System
-- [x] Service Registry
-- [x] Scene Management
-- [x] Logging System
-- [x] Configuration System
-
-## Core Services
-- [x] Input Service
-- [x] Time Service
-- [x] Simulation Manager
+> **Current Version:** v0.2.8
+>
+> LifeVerse is currently focused on building the core engine and gameplay framework before expanding into larger simulation systems.
 
 ---
 
-# ✅ Phase 2 – Gameplay Foundation
+# Version 0.1.0 - Project Foundation ✅
 
-## Character Systems
-- [x] Character Controller
-- [x] Character Manager
-- [x] Character State System
-- [x] Character Interaction Controller
+## Project Setup
+- ✅ Unity project created
+- ✅ Repository created
+- ✅ Initial folder structure
+- ✅ Coding standards
+- ✅ Project architecture planning
 
-## Camera
-- [x] Third-Person Camera
+---
 
-## Animation
-- [x] Mixamo Character
-- [x] Animation Controller
-- [x] Blend Tree
-- [x] Sit Animation
-- [x] Stand Animation
+# Version 0.1.1 - Core Framework ✅
 
-> *Current animations are temporary placeholders and will be replaced with higher-quality animations during the polish phase.*
+## Core Systems
+- ✅ Bootstrap system
+- ✅ Service Registry
+- ✅ Game Manager
+- ✅ Logging Manager
+- ✅ Configuration Manager
+
+---
+
+# Version 0.1.2 - Scene Management ✅
+
+## Scene Framework
+- ✅ SceneService
+- ✅ Scene loading framework
+- ✅ Main Menu
+- ✅ Bootstrap scene
+- ✅ Testing scene
+
+---
+
+# Version 0.1.3 - Input System ✅
+
+## Input Framework
+- ✅ Unity Input System integration
+- ✅ Player controls
+- ✅ UI controls
+- ✅ Build Mode controls
+- ✅ Create-a-Verse controls
+- ✅ Controller support framework
+
+---
+
+# Version 0.1.4 - Time System ✅
+
+## Time Simulation
+- ✅ TimeService
+- ✅ GameClock
+- ✅ Time progression
+- ✅ Pause support
+- ✅ Time scaling
+- ✅ Event framework
+
+---
+
+# Version 0.1.5 - Character Foundation ✅
+
+## Character Framework
+- ✅ CharacterManager
+- ✅ CharacterProfile
+- ✅ Character creation
+- ✅ Character data model
+- ✅ Character simulation framework
+
+---
+
+# Version 0.1.6 - Needs System ✅
 
 ## Simulation
-- [x] Needs System
+
+### Needs
+- ✅ Hunger
+- ✅ Energy
+- ✅ Hygiene
+- ✅ Bladder
+- ✅ Fun
+- ✅ Social
+
+### Simulation
+- ✅ NeedsSystem
+- ✅ Need decay
+- ✅ Critical need detection
+- ✅ Character simulation updates
 
 ---
 
-# ✅ Phase 3 – Interaction Framework
+# Version 0.1.7 - Player Controller ✅
 
-## Core Interaction
-- [x] IInteractable
-- [x] Interaction Detector
-- [x] Interaction Input
-- [x] Interaction UI
+## Player
 
-## Interaction System v2
-- [x] Parent Object Detection
-- [x] Closest Interactable Selection
-- [x] Interaction Angle Filtering
-- [x] Debug Visualization
+### Movement
+- ✅ CharacterController movement
+- ✅ Camera movement
+- ✅ Gravity
+- ✅ Ground detection
 
----
-
-# ✅ Phase 4 – Furniture Framework
-
-## Furniture Framework
-- [x] FurnitureInteractable
-- [x] SeatingInteractable
-
-## Seating Furniture
-- [x] ChairInteractable
-- [x] BenchInteractable
-- [x] SofaInteractable
-
-## Bedroom
-- [x] BedInteractable (Prototype)
-- [x] Sleep Interaction
-- [x] Wake Up Interaction
-- [x] Time Acceleration
-- [x] Needs Recovery During Sleep
-- [ ] Sleep Animation
-- [ ] Sleeping Loop
-- [ ] Wake Up Animation
-- [ ] Wake-Up Time Selection
-
-## Interactive Furniture
-- [x] Interactive Chairs
-- [x] Interactive Benches
-- [x] Interactive Sofas
-- [x] Interactive Doors
-- [x] Interactive Beds
-
-## Future Furniture
-- [ ] Dining Chairs
-- [ ] Office Chairs
-- [ ] Tables
-- [ ] Lights
-- [ ] TVs
-- [ ] Refrigerators
-- [ ] Cabinets
-- [ ] Showers
-- [ ] Toilets
-- [ ] Computers
-- [ ] Kitchen Appliances
+### Camera
+- ✅ Cinemachine integration
+- ✅ Third-person camera
 
 ---
 
-# 📅 Phase 5 – Living World
+# Version 0.2.0 - Interaction Foundation ✅
 
-## NPC Foundation
-- [ ] NPC Controller
-- [ ] NPC AI
-- [ ] Daily Schedules
-- [ ] Pathfinding
-- [ ] Home Assignment
-- [ ] Occupations
-
-## Character Simulation
-- [ ] Relationships
-- [ ] Memories
-- [ ] Personality
-- [ ] Skills
-- [ ] Emotions
-- [ ] Traits
-- [ ] Aging
+## Interaction System
+- ✅ IInteractable interface
+- ✅ InteractionDetector
+- ✅ InteractionInput
+- ✅ Basic interaction framework
 
 ---
 
-# 📅 Phase 6 – World Systems
+# Version 0.2.1 - Object Interactions ✅
 
-## Housing
-- [ ] Houses
-- [ ] Apartments
-- [ ] Lots
-- [ ] Neighborhoods
-
-## Economy
-- [ ] Money
-- [ ] Careers
-- [ ] Businesses
-- [ ] Shopping
-- [ ] Bills
-
-## Transportation
-- [ ] Vehicles
-- [ ] Driving
-- [ ] Parking
-
-## Environment
-- [ ] Weather
-- [ ] Seasons
-- [ ] Day/Night Improvements
+## World Objects
+- ✅ Bed interaction
+- ✅ Chair interaction
+- ✅ Door interaction
+- ✅ Interaction names
+- ✅ Interaction validation
 
 ---
 
-# 📅 Phase 7 – Gameplay
+# Version 0.2.2 - Gameplay Windows ✅
 
-## Build Mode
-- [ ] Place Furniture
-- [ ] Move Furniture
-- [ ] Rotate Furniture
-- [ ] Delete Furniture
-- [ ] Wall Placement
-- [ ] Floor Placement
-- [ ] Room Building
-
-## Character Gameplay
-- [ ] Inventory
-- [ ] Clothing
-- [ ] Cooking
-- [ ] Hygiene
-- [ ] Entertainment
-- [ ] Gardening
-- [ ] Fitness
-- [ ] Hobbies
+## UI Foundation
+- ✅ UIManager
+- ✅ UIWindow
+- ✅ UIWindowType
+- ✅ UIElement
+- ✅ SleepWindow
 
 ---
 
-# 🌟 Phase 8 – Polish
+# Version 0.2.8 - Interaction Prompt System ✅
 
-## Visuals
-- [ ] Replace Placeholder Character Animations
-- [ ] Replace Placeholder Models
-- [ ] Improved Character Models
-- [ ] Environment Art
-- [ ] Lighting Improvements
-- [ ] UI Polish
-- [ ] Audio System
-- [ ] Ambient Sounds
-- [ ] Music
+## Gameplay UI
 
-## Optimization
-- [ ] Performance Improvements
-- [ ] Save System
-- [ ] Loading System
+### Prompt Framework
+- ✅ PromptData
+- ✅ InteractionPrompt
+- ✅ PromptManager foundation
+- ✅ InteractionPromptUI
 
----
+### Features
+- ✅ Automatic interaction prompts
+- ✅ Context-sensitive prompt text
+- ✅ Prompt show/hide
+- ✅ Prompt optimization
+- ✅ Gameplay/UI separation
 
-# 🌍 Future
-
-## Online
-- [ ] Multiplayer
-- [ ] Shared Worlds
-- [ ] Friends
-
-## Community
-- [ ] Steam Workshop
-- [ ] Mod Support
-- [ ] Steam Achievements
-- [ ] Cloud Saves
+### Testing
+- ✅ Bed prompt
+- ✅ Chair prompt
+- ✅ Door prompt
 
 ---
 
-# 🚀 Current Sprint
+# Version 0.2.9 - Interaction Improvements
 
-## Sprint 6 – Gameplay UI Framework
+## Interaction
 
-### ✅ Completed
+### Features
+- ⬜ Multiple interaction support
+- ⬜ Interaction priority system
+- ⬜ Context-sensitive interaction icons
+- ⬜ Dynamic keybinding display
+- ⬜ Gamepad prompt support
+- ⬜ Interaction animations
+- ⬜ Interaction cooldown framework
 
-- [x] UI Folder Structure
-- [x] UIWindowType
-- [x] UIElement
-- [x] UIWindow
-- [x] UIManager
-- [x] SleepWindow Prototype
-- [x] UI Framework Testing
-
-### 🚧 In Progress
-
-- [ ] Prompt System
-- [ ] Notification System
-- [ ] HUD Framework
-- [ ] Sleep Menu
-- [ ] Inventory Window
-- [ ] Phone Interface
+### UI
+- ⬜ Prompt animations
+- ⬜ Prompt transitions
+- ⬜ Interaction icon library
 
 ---
 
-## Future UI Systems
+# Version 0.3.0 - Inventory System
+
+## Inventory
 
 ### Core
+- ⬜ Inventory Manager
+- ⬜ Item database
+- ⬜ Item definitions
+- ⬜ Inventory UI
+- ⬜ Drag and drop
+- ⬜ Stackable items
 
-- [x] UIWindowType
-- [x] UIElement
-- [x] UIWindow
-- [x] UIManager
+### Gameplay
+- ⬜ Pick up items
+- ⬜ Drop items
+- ⬜ Use items
+- ⬜ Equip items
 
-### Windows
+---
 
-- [x] SleepWindow
-- [ ] InventoryWindow
-- [ ] PhoneWindow
-- [ ] SettingsWindow
-- [ ] CareerWindow
-- [ ] RelationshipWindow
-- [ ] BuildModeWindow
-- [ ] CreateAVerseWindow
+# Version 0.4.0 - Build Mode
 
-### HUD
+## Building
 
-- [ ] Needs HUD
-- [ ] Clock
-- [ ] Money Display
-- [ ] Notifications
-- [ ] Active Interaction Prompt
+### Placement
+- ⬜ Grid placement
+- ⬜ Object rotation
+- ⬜ Move objects
+- ⬜ Delete objects
+- ⬜ Placement validation
 
-### Widgets
+### Build UI
+- ⬜ Build catalog
+- ⬜ Categories
+- ⬜ Search
+- ⬜ Filters
 
-- [ ] Progress Bars
-- [ ] Buttons
-- [ ] Tooltips
-- [ ] Icons
-- [ ] Scroll Views
+---
+
+# Version 0.5.0 - Create-a-Verse
+
+## Character Creator
+
+### Appearance
+- ⬜ Body customization
+- ⬜ Face customization
+- ⬜ Hair
+- ⬜ Clothing
+- ⬜ Colors
+
+### Identity
+- ⬜ Name
+- ⬜ Age
+- ⬜ Gender
+- ⬜ Traits
+- ⬜ Aspirations
+
+---
+
+# Version 0.6.0 - Relationships
+
+## Social System
+
+### Relationships
+- ⬜ Relationship manager
+- ⬜ Friendship
+- ⬜ Romance
+- ⬜ Family
+- ⬜ Reputation
+
+### Interactions
+- ⬜ Conversations
+- ⬜ Social actions
+- ⬜ Relationship progression
+
+---
+
+# Version 0.7.0 - Careers
+
+## Careers
+
+### Jobs
+- ⬜ Career system
+- ⬜ Promotions
+- ⬜ Performance
+- ⬜ Salaries
+- ⬜ Career UI
+
+---
+
+# Version 0.8.0 - AI
+
+## Simulation AI
+
+### Decision Making
+- ⬜ Utility AI
+- ⬜ Goal selection
+- ⬜ Autonomous interactions
+- ⬜ Daily routines
+
+---
+
+# Version 0.9.0 - World Simulation
+
+## World
+
+### Simulation
+- ⬜ NPC spawning
+- ⬜ Households
+- ⬜ Time schedules
+- ⬜ Autonomous simulation
+- ⬜ World persistence
+
+---
+
+# Version 1.0.0 - Early Alpha
+
+## Core Gameplay
+
+### Complete
+- ⬜ Character simulation
+- ⬜ Needs
+- ⬜ Relationships
+- ⬜ Careers
+- ⬜ Inventory
+- ⬜ Build Mode
+- ⬜ Create-a-Verse
+- ⬜ Save/Load
+- ⬜ UI polish
+- ⬜ Performance optimization
+
+---
+
+# Long-Term Goals
+
+## Gameplay
+
+- ⬜ Vehicles
+- ⬜ Pets
+- ⬜ Seasons
+- ⬜ Weather
+- ⬜ Skills
+- ⬜ Hobbies
+- ⬜ Businesses
+- ⬜ Apartments
+- ⬜ Multiplayer research
+
+## Technical
+
+- ⬜ Save system
+- ⬜ Mod support
+- ⬜ Localization
+- ⬜ Accessibility
+- ⬜ Steam integration
+- ⬜ Achievement system
+- ⬜ Performance profiling
+- ⬜ Asset streaming

@@ -4,30 +4,51 @@ All notable changes to LifeVerse will be documented in this file.
 
 > Version numbers follow the project's milestone-based development cycle.
 
-## [Unreleased]
+# CHANGELOG
+
+## [0.2.8] - 2026-07-17
 
 ### Added
 
-- Gameplay UI Framework
-- UIManager
-- UIWindow
-- UIElement
-- UIWindowType
-- SleepWindow prototype
-- Initial window management system
+#### Gameplay UI Framework
+- Added reusable UI framework foundation
+- Added `UIManager`
+- Added `UIWindow`
+- Added `UIWindowType`
+- Added `UIElement`
+- Added `SleepWindow`
 
-### Improved
+#### Interaction Prompt System
+- Added reusable interaction prompt system
+- Added `PromptData`
+- Added `InteractionPrompt`
+- Added `PromptManager`
+- Added automatic interaction prompts
+- Added contextual interaction text using `InteractionName`
+- Added automatic prompt hiding when no interactable is detected
 
-- Introduced reusable UI architecture
-- Added centralized window management
-- Established common UI lifecycle
-- Improved project organization for future UI systems
+### Changed
 
-### Testing
+#### UI Architecture
+- Refactored interaction prompt system into reusable UI components
+- Separated gameplay logic from prompt presentation
+- Improved interaction prompt architecture using:
+  - InteractionDetector
+  - InteractionPromptUI
+  - PromptData
+  - InteractionPrompt
 
-- Added temporary UI framework testing
-- Verified window open and close functionality
-- Validated first gameplay window implementation
+#### Performance
+- Optimized prompt updates to refresh only when the current interactable changes
+- Reduced unnecessary UI updates
+
+### Tested
+
+- Bed interaction prompts
+- Chair interaction prompts
+- Door interaction prompts
+- Prompt show/hide behavior
+- Interaction prompt updates between interactables
 
 ## [0.2.7] - 2026-07-14
 ## Added
