@@ -1,16 +1,19 @@
 # LifeVerse Roadmap
 
-> **Current Version:** v0.2.8
+> **Current Version:** v0.2.9 – Inventory Foundation
 >
-> LifeVerse is currently focused on building the core engine and gameplay framework before expanding into larger simulation systems.
+> **Current Development:** v0.3.0 – Household Objects
+>
+> LifeVerse is currently focused on building the core gameplay foundation before expanding into advanced life simulation systems.
 
 ---
 
 # Version 0.1.0 - Project Foundation ✅
 
 ## Project Setup
+
 - ✅ Unity project created
-- ✅ Repository created
+- ✅ GitHub repository created
 - ✅ Initial folder structure
 - ✅ Coding standards
 - ✅ Project architecture planning
@@ -20,7 +23,8 @@
 # Version 0.1.1 - Core Framework ✅
 
 ## Core Systems
-- ✅ Bootstrap system
+
+- ✅ Bootstrap System
 - ✅ Service Registry
 - ✅ Game Manager
 - ✅ Logging Manager
@@ -31,54 +35,57 @@
 # Version 0.1.2 - Scene Management ✅
 
 ## Scene Framework
+
 - ✅ SceneService
-- ✅ Scene loading framework
+- ✅ Bootstrap Scene
 - ✅ Main Menu
-- ✅ Bootstrap scene
-- ✅ Testing scene
+- ✅ Testing Scene
+- ✅ Scene Loading Framework
 
 ---
 
 # Version 0.1.3 - Input System ✅
 
 ## Input Framework
-- ✅ Unity Input System integration
-- ✅ Player controls
-- ✅ UI controls
-- ✅ Build Mode controls
-- ✅ Create-a-Verse controls
-- ✅ Controller support framework
+
+- ✅ Unity Input System
+- ✅ Gameplay Controls
+- ✅ UI Controls
+- ✅ Build Mode Controls
+- ✅ Create-a-Verse Controls
+- ✅ Controller Support Framework
 
 ---
 
 # Version 0.1.4 - Time System ✅
 
 ## Time Simulation
-- ✅ TimeService
-- ✅ GameClock
-- ✅ Time progression
-- ✅ Pause support
-- ✅ Time scaling
-- ✅ Event framework
+
+- ✅ Time Service
+- ✅ Game Clock
+- ✅ Time Progression
+- ✅ Time Scaling
+- ✅ Pause Support
+- ✅ Time Events
 
 ---
 
 # Version 0.1.5 - Character Foundation ✅
 
 ## Character Framework
-- ✅ CharacterManager
-- ✅ CharacterProfile
-- ✅ Character creation
-- ✅ Character data model
-- ✅ Character simulation framework
+
+- ✅ Character Manager
+- ✅ Character Profiles
+- ✅ Character Creation
+- ✅ Character Data Model
+- ✅ Character Simulation Framework
 
 ---
 
 # Version 0.1.6 - Needs System ✅
 
-## Simulation
+## Needs
 
-### Needs
 - ✅ Hunger
 - ✅ Energy
 - ✅ Hygiene
@@ -86,11 +93,11 @@
 - ✅ Fun
 - ✅ Social
 
-### Simulation
-- ✅ NeedsSystem
-- ✅ Need decay
-- ✅ Critical need detection
-- ✅ Character simulation updates
+## Simulation
+
+- ✅ Need Decay
+- ✅ Critical Need Detection
+- ✅ Character Simulation Updates
 
 ---
 
@@ -99,176 +106,217 @@
 ## Player
 
 ### Movement
-- ✅ CharacterController movement
-- ✅ Camera movement
+
+- ✅ Character Controller
+- ✅ Camera Relative Movement
+- ✅ Sprinting
 - ✅ Gravity
-- ✅ Ground detection
+- ✅ Ground Detection
 
 ### Camera
-- ✅ Cinemachine integration
-- ✅ Third-person camera
+
+- ✅ Cinemachine Integration
+- ✅ Third-Person Camera
 
 ---
 
-# Version 0.2.0 - Interaction Foundation ✅
+# Version 0.2.0 - Furniture Framework ✅
 
-## Interaction System
-- ✅ IInteractable interface
-- ✅ InteractionDetector
-- ✅ InteractionInput
-- ✅ Basic interaction framework
+## Furniture
+
+- ✅ Furniture Framework
+- ✅ Chair
+- ✅ Bench
+- ✅ Sofa
+- ✅ Door
+- ✅ Bed
 
 ---
 
-# Version 0.2.1 - Object Interactions ✅
+# Version 0.2.1 - Sleeping System ✅
 
-## World Objects
-- ✅ Bed interaction
-- ✅ Chair interaction
-- ✅ Door interaction
-- ✅ Interaction names
-- ✅ Interaction validation
+## Sleep
+
+- ✅ Sleep Interaction
+- ✅ Wake-Up Interaction
+- ✅ Time Acceleration
+- ✅ Energy Recovery
+- ✅ Character State Synchronization
 
 ---
 
 # Version 0.2.2 - Gameplay Windows ✅
 
 ## UI Foundation
+
 - ✅ UIManager
 - ✅ UIWindow
 - ✅ UIWindowType
 - ✅ UIElement
-- ✅ SleepWindow
+- ✅ Sleep Window
 
 ---
 
 # Version 0.2.8 - Interaction Prompt System ✅
 
-## Gameplay UI
+## Prompt Framework
 
-### Prompt Framework
 - ✅ PromptData
 - ✅ InteractionPrompt
-- ✅ PromptManager foundation
+- ✅ PromptManager
 - ✅ InteractionPromptUI
 
-### Features
-- ✅ Automatic interaction prompts
-- ✅ Context-sensitive prompt text
-- ✅ Prompt show/hide
-- ✅ Prompt optimization
-- ✅ Gameplay/UI separation
+## Features
 
-### Testing
-- ✅ Bed prompt
-- ✅ Chair prompt
-- ✅ Door prompt
+- ✅ Automatic Prompts
+- ✅ Context-Sensitive Prompts
+- ✅ Prompt Show / Hide
+- ✅ Prompt Optimization
+- ✅ Gameplay/UI Separation
 
 ---
 
-# Version 0.2.9 - Interaction Improvements
+# Version 0.2.9 - Inventory Foundation ✅
 
 ## Interaction
 
-### Features
-- ⬜ Multiple interaction support
-- ⬜ Interaction priority system
-- ⬜ Context-sensitive interaction icons
-- ⬜ Dynamic keybinding display
-- ⬜ Gamepad prompt support
-- ⬜ Interaction animations
-- ⬜ Interaction cooldown framework
-
-### UI
-- ⬜ Prompt animations
-- ⬜ Prompt transitions
-- ⬜ Interaction icon library
-
----
-
-# Version 0.3.0 - Inventory System
+- ✅ Interaction Controller
+- ✅ Generic IInteractable Framework
+- ✅ Item Interaction
+- ✅ World Item Interaction
 
 ## Inventory
 
 ### Core
-- ⬜ Inventory Manager
-- ⬜ Item database
-- ⬜ Item definitions
-- ⬜ Inventory UI
-- ⬜ Drag and drop
-- ⬜ Stackable items
+
+- ✅ Item Definitions
+- ✅ World Items
+- ✅ Player Inventory
+- ✅ Inventory Containers
+- ✅ Inventory Slots
+- ✅ Inventory Events
+- ✅ Inventory UI
 
 ### Gameplay
-- ⬜ Pick up items
-- ⬜ Drop items
-- ⬜ Use items
-- ⬜ Equip items
+
+- ✅ Pick Up Items
+- ✅ Store Items
+- ✅ Real-Time Inventory Updates
+
+### Gameplay Loop
+
+- ✅ Walk to Item
+- ✅ Interact
+- ✅ Item Added to Inventory
 
 ---
 
-# Version 0.4.0 - Build Mode
+# Version 0.3.0 - Household Objects 🚧
 
-## Building
+## Furniture
 
-### Placement
-- ⬜ Grid placement
-- ⬜ Object rotation
-- ⬜ Move objects
-- ⬜ Delete objects
-- ⬜ Placement validation
+### Kitchen
 
-### Build UI
-- ⬜ Build catalog
-- ⬜ Categories
-- ⬜ Search
-- ⬜ Filters
+- ⬜ Refrigerator
+- ⬜ Stove
+- ⬜ Oven
+- ⬜ Microwave
+- ⬜ Dishwasher
+- ⬜ Kitchen Sink
+
+### Bathroom
+
+- ⬜ Toilet
+- ⬜ Shower
+- ⬜ Bathtub
+
+### Living Room
+
+- ⬜ Television
+- ⬜ Coffee Table
+- ⬜ Fireplace
+
+## Framework
+
+- ⬜ ApplianceInteractable
+- ⬜ StorageInteractable
+- ⬜ SleepingInteractable
+- ⬜ ElectronicInteractable
 
 ---
 
-# Version 0.5.0 - Create-a-Verse
+# Version 0.4.0 - Food & Cooking
+
+## Food
+
+- ⬜ Food Items
+- ⬜ Eating
+- ⬜ Hunger Recovery
+- ⬜ Food Spoilage
+
+## Cooking
+
+- ⬜ Recipes
+- ⬜ Ingredients
+- ⬜ Cooking Skill
+- ⬜ Kitchen Appliances
+
+---
+
+# Version 0.5.0 - Economy
+
+## Economy
+
+- ⬜ Money
+- ⬜ Shopping
+- ⬜ Bills
+- ⬜ Grocery Stores
+- ⬜ Furniture Stores
+
+---
+
+# Version 0.6.0 - Create-a-Verse
 
 ## Character Creator
 
 ### Appearance
-- ⬜ Body customization
-- ⬜ Face customization
+
+- ⬜ Body Customization
+- ⬜ Face
 - ⬜ Hair
 - ⬜ Clothing
-- ⬜ Colors
 
 ### Identity
+
 - ⬜ Name
 - ⬜ Age
-- ⬜ Gender
 - ⬜ Traits
 - ⬜ Aspirations
 
 ---
 
-# Version 0.6.0 - Relationships
+# Version 0.7.0 - Relationships
 
-## Social System
+## Social
 
-### Relationships
-- ⬜ Relationship manager
 - ⬜ Friendship
 - ⬜ Romance
 - ⬜ Family
 - ⬜ Reputation
 
-### Interactions
+## Interactions
+
 - ⬜ Conversations
-- ⬜ Social actions
-- ⬜ Relationship progression
+- ⬜ Social Actions
+- ⬜ Relationship Progression
 
 ---
 
-# Version 0.7.0 - Careers
+# Version 0.8.0 - Careers
 
 ## Careers
 
-### Jobs
-- ⬜ Career system
+- ⬜ Jobs
 - ⬜ Promotions
 - ⬜ Performance
 - ⬜ Salaries
@@ -276,46 +324,33 @@
 
 ---
 
-# Version 0.8.0 - AI
-
-## Simulation AI
-
-### Decision Making
-- ⬜ Utility AI
-- ⬜ Goal selection
-- ⬜ Autonomous interactions
-- ⬜ Daily routines
-
----
-
 # Version 0.9.0 - World Simulation
 
 ## World
 
-### Simulation
-- ⬜ NPC spawning
+- ⬜ NPC AI
+- ⬜ Daily Routines
 - ⬜ Households
-- ⬜ Time schedules
-- ⬜ Autonomous simulation
-- ⬜ World persistence
+- ⬜ Autonomous Simulation
+- ⬜ World Persistence
 
 ---
 
 # Version 1.0.0 - Early Alpha
 
-## Core Gameplay
+## Complete Gameplay Foundation
 
-### Complete
-- ⬜ Character simulation
+- ⬜ Character Simulation
 - ⬜ Needs
+- ⬜ Inventory
+- ⬜ Household Objects
+- ⬜ Food & Cooking
 - ⬜ Relationships
 - ⬜ Careers
-- ⬜ Inventory
-- ⬜ Build Mode
 - ⬜ Create-a-Verse
-- ⬜ Save/Load
-- ⬜ UI polish
-- ⬜ Performance optimization
+- ⬜ Save / Load
+- ⬜ UI Polish
+- ⬜ Performance Optimization
 
 ---
 
@@ -323,6 +358,7 @@
 
 ## Gameplay
 
+- ⬜ Open World
 - ⬜ Vehicles
 - ⬜ Pets
 - ⬜ Seasons
@@ -331,15 +367,15 @@
 - ⬜ Hobbies
 - ⬜ Businesses
 - ⬜ Apartments
-- ⬜ Multiplayer research
+- ⬜ Multiplayer Research
 
 ## Technical
 
-- ⬜ Save system
-- ⬜ Mod support
+- ⬜ Save System
+- ⬜ Mod Support
 - ⬜ Localization
 - ⬜ Accessibility
-- ⬜ Steam integration
-- ⬜ Achievement system
-- ⬜ Performance profiling
-- ⬜ Asset streaming
+- ⬜ Steam Integration
+- ⬜ Achievement System
+- ⬜ Performance Profiling
+- ⬜ Asset Streaming

@@ -6,6 +6,74 @@ All notable changes to LifeVerse will be documented in this file.
 
 # CHANGELOG
 
+## [0.2.9] - 2026-07-18
+
+### Added
+
+#### Inventory Foundation
+
+- Added reusable inventory framework
+- Added `ItemDefinition`
+- Added `InventoryItem`
+- Added `InventorySlot`
+- Added `InventoryContainer`
+- Added `PlayerInventory`
+- Added `InventoryUI`
+- Added inventory event system
+- Added stackable item support
+- Added inventory update notifications
+
+#### World Items
+
+- Added `WorldItem`
+- Added `ItemPickup`
+- Added world item interaction
+- Added automatic inventory integration
+- Added item collection workflow
+
+#### Interaction Improvements
+
+- Added `InteractionController`
+- Added interaction support for world items
+- Added reusable interaction pipeline between world objects and inventory
+- Added support for future interactive furniture and household objects
+
+### Changed
+
+#### Interaction Architecture
+
+- Improved interaction workflow by separating detection, prompts, and interaction execution
+- Expanded the reusable `IInteractable` framework
+- Improved interaction scalability for future gameplay systems
+
+#### Inventory Architecture
+
+- Implemented a modular inventory foundation designed for future expansion
+- Separated inventory data from gameplay interactions
+- Designed the inventory system to support future unlimited inventory functionality
+
+### Fixed
+
+#### Inventory
+
+- Fixed `ItemDefinition` assignment issues during item pickup
+- Fixed inventory initialization problems
+- Improved inventory reliability when collecting world items
+
+#### Interaction
+
+- Fixed interaction flow between world items and player inventory
+- Resolved duplicate interaction handling during testing
+
+### Tested
+
+- Verified world item pickup
+- Verified inventory updates
+- Verified inventory event notifications
+- Verified interaction prompts
+- Verified repeated item collection
+- Verified inventory persistence during gameplay
+
 ## [0.2.8] - 2026-07-17
 
 ### Added
