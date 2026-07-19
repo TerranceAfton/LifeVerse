@@ -1,10 +1,10 @@
 # LifeVerse Roadmap
 
-> **Current Version:** v0.2.9 – Inventory Foundation
+> **Current Version:** v0.3.0 – Household Objects (Part 1)
 >
-> **Current Development:** v0.3.0 – Household Objects
+> **Current Development:** v0.3.0 – Household Objects (Part 2)
 >
-> LifeVerse is currently focused on building the core gameplay foundation before expanding into advanced life simulation systems.
+> LifeVerse is currently focused on expanding household gameplay systems before moving into deeper life simulation features.
 
 ---
 
@@ -211,55 +211,98 @@
 
 ---
 
-# Version 0.3.0 - Household Objects 🚧
+# Version 0.3.0 - Household Objects (Part 1) ✅
 
-## Furniture
+## Interaction
 
-### Kitchen
+- ✅ Interaction System v2
+- ✅ Interaction Detector
+- ✅ Interaction Controller
+- ✅ Context Interaction Prompts
+- ✅ Parent Object Detection
+- ✅ Closest Interactable Selection
 
-- ⬜ Refrigerator
+## Furniture Framework
+
+- ✅ ApplianceInteractable
+- ✅ Furniture Base Classes
+- ✅ Reusable Interaction Architecture
+
+## Kitchen
+
+- ✅ Refrigerator
+- ✅ Open / Close Interaction
+- ✅ Dynamic Interaction Prompts
+
+---
+
+# Version 0.3.1 - Household Storage 🚧
+
+## Storage
+
+- ⬜ Storage Component
+- ⬜ Storage Containers
+- ⬜ Container Interface
+- ⬜ Refrigerator Inventory
+- ⬜ Cabinet Storage
+- ⬜ Pantry Storage
+
+## Gameplay
+
+- ⬜ Store Food
+- ⬜ Remove Food
+- ⬜ Item Transfer
+- ⬜ Storage UI
+
+---
+
+# Version 0.3.2 - Food System
+
+## Food
+
+- ⬜ Food Definitions
+- ⬜ Food Categories
+- ⬜ Stackable Food
+- ⬜ Food Quality
+- ⬜ Food Spoilage
+
+## Gameplay
+
+- ⬜ Eat Food
+- ⬜ Hunger Recovery
+- ⬜ Consume Inventory Items
+
+---
+
+# Version 0.3.3 - Kitchen Appliances
+
+## Kitchen
+
 - ⬜ Stove
 - ⬜ Oven
 - ⬜ Microwave
 - ⬜ Dishwasher
 - ⬜ Kitchen Sink
+- ⬜ Counters
 
-### Bathroom
+## Gameplay
 
-- ⬜ Toilet
-- ⬜ Shower
-- ⬜ Bathtub
-
-### Living Room
-
-- ⬜ Television
-- ⬜ Coffee Table
-- ⬜ Fireplace
-
-## Framework
-
-- ⬜ ApplianceInteractable
-- ⬜ StorageInteractable
-- ⬜ SleepingInteractable
-- ⬜ ElectronicInteractable
+- ⬜ Cooking Preparation
+- ⬜ Cleaning Dishes
+- ⬜ Kitchen Interactions
 
 ---
 
-# Version 0.4.0 - Food & Cooking
-
-## Food
-
-- ⬜ Food Items
-- ⬜ Eating
-- ⬜ Hunger Recovery
-- ⬜ Food Spoilage
+# Version 0.4.0 - Cooking
 
 ## Cooking
 
 - ⬜ Recipes
 - ⬜ Ingredients
 - ⬜ Cooking Skill
-- ⬜ Kitchen Appliances
+- ⬜ Meal Creation
+- ⬜ Burnt Food
+- ⬜ Cooking UI
 
 ---
 

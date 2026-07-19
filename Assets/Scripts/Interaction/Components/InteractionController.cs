@@ -25,8 +25,8 @@ namespace LifeVerse.Interaction.Components
 
         private void Update()
         {
-            UpdatePrompt();
             HandleInteraction();
+            UpdatePrompt();
         }
 
         private void UpdatePrompt()

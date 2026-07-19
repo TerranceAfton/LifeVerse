@@ -6,6 +6,78 @@ All notable changes to LifeVerse will be documented in this file.
 
 # CHANGELOG
 
+## [0.3.0] - 2026-07-19
+
+### Added
+
+#### Household Interaction Framework
+
+- Added `InteractionDetector`
+- Added reusable `InteractionController`
+- Added generic `IInteractable` interface
+- Added reusable appliance interaction architecture
+- Added dynamic interaction names
+- Added context-sensitive household interaction prompts
+- Added parent object detection
+- Added closest interactable selection
+
+#### Furniture Framework
+
+- Added `ApplianceInteractable`
+- Added reusable appliance base class
+- Expanded the furniture framework to support future household objects
+- Improved reusable interaction architecture for appliances
+
+#### Kitchen
+
+- Added `Refrigerator`
+- Added refrigerator open interaction
+- Added refrigerator close interaction
+- Added dynamic interaction prompt switching
+- Added first interactive household appliance
+
+### Changed
+
+#### Interaction Architecture
+
+- Refactored household interactions to use a single interaction pipeline
+- Improved interaction execution using `InteractionController`
+- Improved prompt refresh timing after interactions
+- Expanded the reusable interaction framework for future household furniture
+- Improved interaction scalability for additional appliance types
+
+#### Furniture Architecture
+
+- Reorganized furniture scripts into reusable base classes
+- Improved separation between interaction logic and object-specific behavior
+- Designed appliance interactions for future storage, cooking, and electronic systems
+
+### Fixed
+
+#### Interaction
+
+- Fixed duplicate interaction execution caused by the legacy `InteractionInput` system
+- Fixed refrigerator opening and closing from a single interaction
+- Fixed conflicting interaction components running simultaneously
+- Fixed interaction prompt updates after appliance state changes
+
+#### Debugging
+
+- Removed obsolete interaction debugging components
+- Removed temporary interaction logging
+- Removed stack trace debugging after testing
+- Cleaned up interaction testing code
+
+### Tested
+
+- Verified refrigerator interaction
+- Verified repeated open / close interaction cycle
+- Verified interaction prompt updates
+- Verified appliance interaction state changes
+- Verified interaction detection
+- Verified interaction controller execution
+- Verified reusable appliance interaction framework
+
 ## [0.2.9] - 2026-07-18
 
 ### Added

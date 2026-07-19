@@ -11,7 +11,7 @@
 ![Unity](https://img.shields.io/badge/Unity-6-black)
 ![C#](https://img.shields.io/badge/C%23-.NET-purple)
 ![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
-![Version](https://img.shields.io/badge/Version-v0.2.9-blue)
+![Version](https://img.shields.io/badge/Version-v0.3.0-blue)
 
 # 🌎 LifeVerse
 
@@ -19,7 +19,7 @@
 
 LifeVerse is an ambitious life simulation game inspired by classics like **The Sims**, while introducing deeper AI, realistic life progression, advanced personalities, dynamic relationships, careers, memories, and an interactive open world.
 
-The project is being built around a modular architecture where gameplay systems are designed to be reusable, scalable, and easy to expand as development progresses.
+The project is built around a modular architecture where gameplay systems are reusable, scalable, and designed for long-term expansion.
 
 ---
 
@@ -43,30 +43,38 @@ Every character should feel alive.
 
 # 🚀 Recent Milestones
 
-### v0.2.9 – Inventory Foundation ✅
+### v0.3.0 – Household Objects (Part 1) ✅
 
-- ✅ Completed Inventory Foundation
-- ✅ Added World Item system
-- ✅ Added Item Definitions
-- ✅ Added Item Pickup system
-- ✅ Added Inventory UI
-- ✅ Added Inventory Events
-- ✅ Added Inventory Containers
-- ✅ Completed Interaction System
+- ✅ Completed Household Interaction Framework
+- ✅ Added Appliance Framework
+- ✅ Added Generic IInteractable System
 - ✅ Added Context Interaction Prompts
-- ✅ Created the first complete gameplay loop
+- ✅ Added Interaction Controller
+- ✅ Added Interaction Detector
+- ✅ Added Prompt Manager
+- ✅ Added Parent Object Detection
+- ✅ Added Refrigerator
+- ✅ Added Dynamic Open / Close Interactions
 
 Gameplay Loop:
 
-Walk to Item
+Walk to Refrigerator
 
 ↓
 
-Press Interact
+Press **E**
 
 ↓
 
-Item Added to Inventory
+Open Refrigerator
+
+↓
+
+Press **E**
+
+↓
+
+Close Refrigerator
 
 ---
 
@@ -74,23 +82,23 @@ Item Added to Inventory
 
 ## Current Version
 
-**Prototype v0.2.9 (Pre-Alpha)**
+**Prototype v0.3.0 (Pre-Alpha)**
 
 ### Latest Completed Milestone
 
-🏆 Inventory Foundation
+🏆 Household Objects (Part 1)
 
 ### Current Development
 
 🚧 Version 0.3.0 – Household Objects
 
-Current focus:
+Current Focus
 
-- Refrigerator
-- Appliance Framework
 - Household Storage
-- Food System
-- Eating
+- Food Items
+- Refrigerator Storage
+- Kitchen Cabinets
+- Eating System
 
 ---
 
@@ -131,7 +139,7 @@ Current focus:
 - Sprinting
 - Gravity
 - Cinemachine Camera
-- Unity New Input System
+- Unity Input System
 - Animation Controller
 - Blend Trees
 
@@ -142,12 +150,12 @@ Current focus:
 - Interaction Framework
 - Interaction System v2
 - Interaction Detector
+- Interaction Controller
 - Context Interaction UI
 - Prompt Manager
 - Parent Object Detection
 - Closest Interactable Selection
 - Interaction Angle Filtering
-- Debug Visualization
 - Generic IInteractable Interface
 
 ---
@@ -167,12 +175,25 @@ Current focus:
 
 ## Furniture
 
+### Framework
+
 - Furniture Framework
-- Interactive Chairs
-- Interactive Benches
-- Interactive Sofas
-- Interactive Doors
-- Interactive Beds
+- Appliance Framework
+- Furniture Base Classes
+- Reusable Interaction Architecture
+
+### Interactive Objects
+
+- Chair
+- Bench
+- Sofa
+- Bed
+- Door
+- Refrigerator
+- World Items
+
+### Sleep System
+
 - Sleep Interaction
 - Wake-Up Interaction
 - Time Acceleration During Sleep
@@ -180,27 +201,18 @@ Current focus:
 
 ---
 
-## Current Interactive Objects
-
-- Chair
-- Bench
-- Sofa
-- Bed
-- Door
-- World Items
-
----
-
 # 🚧 Currently Developing
 
-Version 0.3.0
+## Version 0.3.0
 
-- Refrigerator
-- Appliance Framework
-- Household Inventory
-- Food Storage
+- Household Storage
+- Storage Containers
+- Refrigerator Inventory
+- Food Definitions
 - Eating System
 - Kitchen Objects
+- Pantry
+- Cabinets
 
 ---
 
@@ -208,13 +220,16 @@ Version 0.3.0
 
 ## Household
 
-- Refrigerator
+- Refrigerator Inventory
+- Pantry
+- Kitchen Cabinets
 - Stove
 - Oven
 - Microwave
 - Dishwasher
 - Kitchen Sink
-- Pantry
+
+---
 
 ## Life Simulation
 
@@ -226,6 +241,8 @@ Version 0.3.0
 - Memories
 - Economy
 
+---
+
 ## World
 
 - Housing
@@ -233,6 +250,8 @@ Version 0.3.0
 - Restaurants
 - Vehicles
 - Open World
+
+---
 
 ## Creation
 
@@ -243,22 +262,25 @@ Version 0.3.0
 
 # 📊 Development Progress
 
-████████████████████ 100%
+████████████████████ 100%  
 Core Engine
 
-████████████████████ 100%
+████████████████████ 100%  
 Gameplay Foundation
 
-████████████████████ 100%
+████████████████████ 100%  
 Interaction & Inventory
 
-████████████████░░░░ 80%
+████████████████████ 100%  
 Furniture Framework
 
-████████░░░░░░░░░░░░ 40%
+██████████░░░░░░░░░░ 50%  
+Household Objects
+
+████████░░░░░░░░░░░░ 40%  
 Life Simulation
 
-██░░░░░░░░░░░░░░░░░░ 10%
+██░░░░░░░░░░░░░░░░░░ 10%  
 World Systems
 
 ---
@@ -307,8 +329,9 @@ Project documentation includes:
 - Character System
 - Simulation Systems
 - Interaction Framework
-- Inventory System
 - Furniture Framework
+- Appliance Framework
+- Inventory System
 - Development Logs
 - Changelog
 - Roadmap

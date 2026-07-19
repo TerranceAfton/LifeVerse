@@ -1,26 +1,34 @@
 using UnityEngine;
-using LifeVerse.Interaction.Interfaces;
+using LifeVerse.Furniture.Base;
 
 namespace LifeVerse.Furniture.Kitchen
 {
     /// <summary>
-    /// A refrigerator that can be opened by the player.
+    /// Simple refrigerator interaction.
     /// </summary>
-    public class Refrigerator : MonoBehaviour, IInteractable
+    public class Refrigerator : ApplianceInteractable
     {
-        public string InteractionName => "Open Refrigerator";
+        private bool _isOpen;
 
-        public bool CanInteract()
+        private void Reset()
         {
-            return true;
+            interactionName = "Open Refrigerator";
         }
 
-        public void Interact(GameObject interactor)
+        public override void Interact(GameObject interactor)
         {
-            Debug.Log("Refrigerator opened.");
+            _isOpen = !_isOpen;
 
-            // Future:
-            // RefrigeratorUI.Instance.Open(this);
+            if (_isOpen)
+            {
+                interactionName = "Close Refrigerator";
+                Debug.Log("Refrigerator opened.");
+            }
+            else
+            {
+                interactionName = "Open Refrigerator";
+                Debug.Log("Refrigerator closed.");
+            }
         }
     }
 }
