@@ -50,16 +50,29 @@ namespace LifeVerse.Interaction.Components
 
         private void HandleInteraction()
         {
+            if (_characterInput.InteractPressed)
+            {
+                Debug.Log("Interact key pressed.");
+            }
+
             if (!_characterInput.InteractPressed)
                 return;
 
             var interactable = _interactionDetector.CurrentInteractable;
 
             if (interactable == null)
+            {
+                Debug.Log("No interactable.");
                 return;
+            }
+
+            Debug.Log($"Interacting with: {interactable.InteractionName}");
 
             if (!interactable.CanInteract())
+            {
+                Debug.Log("Cannot interact.");
                 return;
+            }
 
             interactable.Interact(gameObject);
         }

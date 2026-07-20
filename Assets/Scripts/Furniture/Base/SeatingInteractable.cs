@@ -30,13 +30,23 @@ namespace LifeVerse.Furniture.Base
             CharacterInteractionController interaction =
                 interactor.GetComponent<CharacterInteractionController>();
 
-            if (interaction == null)
+            CharacterStateController stateController =
+                interactor.GetComponent<CharacterStateController>();
+
+            if (interaction == null || stateController == null)
             {
-                Debug.LogError("CharacterInteractionController not found!");
+                Debug.LogError("Required character components not found!");
                 return;
             }
 
-            interaction.Sit(_seatPoint);
+            if (stateController.CurrentState == CharacterState.Sitting)
+            {
+                interaction.Stand();
+            }
+            else
+            {
+                interaction.Sit(_seatPoint);
+            }
         }
     }
 }

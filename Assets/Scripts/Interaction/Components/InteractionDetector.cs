@@ -1,11 +1,13 @@
 using UnityEngine;
 using LifeVerse.Interaction.Interfaces;
+using LifeVerse.Characters;
 
 namespace LifeVerse.Interaction.Components
 {
     /// <summary>
-    /// Detects interactable objects in front of the player.
+    /// Detects interactable objects near the player.
     /// </summary>
+    [RequireComponent(typeof(CharacterStateController))]
     public class InteractionDetector : MonoBehaviour
     {
         [SerializeField]
@@ -13,12 +15,19 @@ namespace LifeVerse.Interaction.Components
 
         [SerializeField]
         private float _interactionOffset = 1.5f;
-        
+
         [SerializeField]
         [Range(0f, 180f)]
         private float _maxInteractionAngle = 60f;
 
+        private CharacterStateController _stateController;
+
         public IInteractable CurrentInteractable { get; private set; }
+
+        private void Awake()
+        {
+            _stateController = GetComponent<CharacterStateController>();
+        }
 
         private void Update()
         {
@@ -29,8 +38,19 @@ namespace LifeVerse.Interaction.Components
         {
             CurrentInteractable = null;
 
-            Vector3 center =
-                transform.position + transform.forward * _interactionOffset;
+            Vector3 center;
+
+            // If movement is locked (sitting/sleeping),
+            // search around the player instead of in front.
+            if (_stateController.IsMovementLocked)
+            {
+                center = transform.position;
+            }
+            else
+            {
+                center =
+                    transform.position + transform.forward * _interactionOffset;
+            }
 
             Collider[] hits =
                 Physics.OverlapSphere(center, _interactionRadius);
@@ -42,19 +62,19 @@ namespace LifeVerse.Interaction.Components
                 if (hit.GetComponentInParent<IInteractable>() is not IInteractable interactable)
                     continue;
 
-                // Add this section
-                Vector3 directionToObject =
-                    (hit.transform.position - transform.position).normalized;
-
-                float angle =
-                    Vector3.Angle(transform.forward, directionToObject);
-
-                if (angle > _maxInteractionAngle)
+                // Only use the angle check while standing.
+                if (!_stateController.IsMovementLocked)
                 {
-                    continue;
+                    Vector3 directionToObject =
+                        (hit.transform.position - transform.position).normalized;
+
+                    float angle =
+                        Vector3.Angle(transform.forward, directionToObject);
+
+                    if (angle > _maxInteractionAngle)
+                        continue;
                 }
 
-                // Existing code
                 float distance =
                     Vector3.Distance(transform.position, hit.transform.position);
 
@@ -68,24 +88,31 @@ namespace LifeVerse.Interaction.Components
 
         private void OnDrawGizmosSelected()
         {
-            Vector3 center =
-                transform.position + transform.forward * _interactionOffset;
+            Vector3 center;
 
-            // Interaction sphere
+            if (Application.isPlaying &&
+                _stateController != null &&
+                _stateController.IsMovementLocked)
+            {
+                center = transform.position;
+            }
+            else
+            {
+                center =
+                    transform.position + transform.forward * _interactionOffset;
+            }
+
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(center, _interactionRadius);
 
-            // Forward direction
             Gizmos.color = Color.blue;
             Gizmos.DrawLine(
                 transform.position,
-                transform.position + transform.forward * (_interactionOffset + _interactionRadius));
+                center);
 
-            // Current interactable
             if (CurrentInteractable is MonoBehaviour interactable)
             {
                 Gizmos.color = Color.yellow;
-
                 Gizmos.DrawLine(
                     transform.position,
                     interactable.transform.position);
