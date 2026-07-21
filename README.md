@@ -11,7 +11,7 @@
 ![Unity](https://img.shields.io/badge/Unity-6-black)
 ![C#](https://img.shields.io/badge/C%23-.NET-purple)
 ![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
-![Version](https://img.shields.io/badge/Version-v0.3.0-blue)
+![Version](https://img.shields.io/badge/Version-v0.3.1-blue)
 
 # 🌎 LifeVerse
 
@@ -42,6 +42,45 @@ Every character should feel alive.
 ---
 
 # 🚀 Recent Milestones
+
+### v0.3.1 – Inventory Foundation ✅
+
+- ✅ Completed Inventory Framework
+- ✅ Added Item Definitions
+- ✅ Added Inventory Items
+- ✅ Added Inventory Slots
+- ✅ Added Inventory Containers
+- ✅ Added Storage Container Framework
+- ✅ Added World Items
+- ✅ Added World Item Pickups
+- ✅ Added Player Inventory
+- ✅ Added Inventory UI
+- ✅ Added Inventory Events
+- ✅ Added Item Stacking
+- ✅ Added Partial Item Transfers
+- ✅ Added Inventory Change Notifications
+
+Gameplay Loop:
+
+Walk to Item
+
+↓
+
+Press **E**
+
+↓
+
+Item Added to Inventory
+
+↓
+
+Inventory Updates Automatically
+
+↓
+
+World Item Removed (or Updated if Partially Picked Up)
+
+---
 
 ### v0.3.0 – Household Objects (Part 1) ✅
 
@@ -82,23 +121,24 @@ Close Refrigerator
 
 ## Current Version
 
-**Prototype v0.3.0 (Pre-Alpha)**
+**Prototype v0.3.1 (Pre-Alpha)**
 
 ### Latest Completed Milestone
 
-🏆 Household Objects (Part 1)
+🏆 Inventory Foundation
 
 ### Current Development
 
-🚧 Version 0.3.0 – Household Objects
+🚧 Version 0.3.2 – Household Storage & Inventory UI
 
 Current Focus
 
-- Household Storage
-- Food Items
+- Player Inventory Window
+- Storage Containers
 - Refrigerator Storage
-- Kitchen Cabinets
-- Eating System
+- Cabinet Storage
+- Item Transfers
+- Food Items
 
 ---
 
@@ -163,13 +203,20 @@ Current Focus
 ## Inventory
 
 - Item Definitions
+- Item Categories
+- Inventory Items
+- Inventory Slots
+- Inventory System
+- Player Inventory
+- Storage Containers
+- Inventory Events
+- Inventory UI
 - World Items
 - Item Pickups
-- Player Inventory
-- Inventory Containers
-- Inventory Slots
-- Inventory UI
-- Inventory Events
+- Item Stacking
+- Partial Item Transfers
+- Inventory Capacity
+- Runtime Inventory Management
 
 ---
 
@@ -203,16 +250,15 @@ Current Focus
 
 # 🚧 Currently Developing
 
-## Version 0.3.0
+## Version 0.3.2
 
-- Household Storage
+- Player Inventory Window
 - Storage Containers
 - Refrigerator Inventory
+- Cabinet Storage
 - Food Definitions
+- Item Transfers
 - Eating System
-- Kitchen Objects
-- Pantry
-- Cabinets
 
 ---
 
@@ -220,7 +266,6 @@ Current Focus
 
 ## Household
 
-- Refrigerator Inventory
 - Pantry
 - Kitchen Cabinets
 - Stove
@@ -274,7 +319,7 @@ Interaction & Inventory
 ████████████████████ 100%  
 Furniture Framework
 
-██████████░░░░░░░░░░ 50%  
+████████████████░░░░ 75%  
 Household Objects
 
 ████████░░░░░░░░░░░░ 40%  

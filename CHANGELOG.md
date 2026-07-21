@@ -6,6 +6,76 @@ All notable changes to LifeVerse will be documented in this file.
 
 # CHANGELOG
 
+## [0.3.1] - 2026-07-21
+
+### Added
+
+#### Inventory Framework
+
+- Added modular `Inventory` system
+- Added `StorageContainer`
+- Added runtime inventory management
+- Added fixed-capacity inventory architecture
+- Added inventory stacking logic
+- Added inventory capacity tracking
+- Added empty slot tracking
+- Added inventory helper methods
+
+#### Inventory Items
+
+- Added reusable `InventoryItem`
+- Added reusable `InventorySlot`
+- Added item quantity management
+- Added stack capacity calculations
+- Added slot validation logic
+
+#### Gameplay
+
+- Added partial item transfer support
+- Added remaining quantity workflow
+- Added runtime world item quantity updates
+- Added automatic world item removal when empty
+
+### Changed
+
+#### Inventory Architecture
+
+- Refactored inventory API to support partial transfers
+- Replaced boolean inventory operations with remaining quantity returns
+- Improved inventory scalability for future storage systems
+- Improved inventory event handling
+- Improved inventory organization and separation of responsibilities
+
+#### World Items
+
+- Updated `WorldItem` to manage its own quantity
+- Improved world item lifecycle management
+- Simplified pickup workflow
+
+### Fixed
+
+#### Inventory
+
+- Fixed inventory stacking edge cases
+- Fixed inventory overflow handling
+- Fixed inventory synchronization after partial pickups
+
+#### World Items
+
+- Fixed world items remaining after being completely collected
+- Fixed quantity synchronization between world items and inventory
+
+### Tested
+
+- Verified single item pickup
+- Verified stackable item pickup
+- Verified partial item pickup
+- Verified inventory full behavior
+- Verified inventory stacking
+- Verified storage framework
+- Verified world item quantity updates
+- Verified automatic world item removal
+
 ## [0.3.0] - 2026-07-19
 
 ### Added

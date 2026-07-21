@@ -1,8 +1,8 @@
 # LifeVerse Roadmap
 
-> **Current Version:** v0.3.0 – Household Objects (Part 1)
+> **Current Version:** v0.3.1 – Inventory Foundation
 >
-> **Current Development:** v0.3.0 – Household Objects (Part 2)
+> **Current Development:** v0.3.2 – Household Storage & Inventory UI
 >
 > LifeVerse is currently focused on expanding household gameplay systems before moving into deeper life simulation features.
 
@@ -236,41 +236,59 @@
 
 ---
 
-# Version 0.3.1 - Household Storage 🚧
+# Version 0.3.1 - Inventory Foundation ✅
 
-## Storage
+## Inventory
 
-- ⬜ Storage Component
-- ⬜ Storage Containers
-- ⬜ Container Interface
-- ⬜ Refrigerator Inventory
-- ⬜ Cabinet Storage
-- ⬜ Pantry Storage
+### Core
 
-## Gameplay
+- ✅ Inventory
+- ✅ InventoryItem
+- ✅ InventorySlot
+- ✅ StorageContainer
+- ✅ PlayerInventory
 
-- ⬜ Store Food
-- ⬜ Remove Food
-- ⬜ Item Transfer
-- ⬜ Storage UI
+### Gameplay
+
+- ✅ Item Pickup
+- ✅ Inventory Stacking
+- ✅ Partial Item Transfers
+- ✅ Inventory Capacity
+- ✅ Runtime Inventory Updates
+- ✅ Inventory Events
+
+### World
+
+- ✅ WorldItem
+- ✅ ItemPickup
+- ✅ Automatic Quantity Updates
+- ✅ Automatic World Item Removal
 
 ---
 
-# Version 0.3.2 - Food System
+# Version 0.3.2 - Household Storage & Inventory UI 🚧
 
-## Food
+## Storage
 
-- ⬜ Food Definitions
-- ⬜ Food Categories
-- ⬜ Stackable Food
-- ⬜ Food Quality
-- ⬜ Food Spoilage
+- ⬜ Refrigerator Inventory
+- ⬜ Cabinet Storage
+- ⬜ Pantry Storage
+- ⬜ Bookshelves
+- ⬜ Dressers
+
+## User Interface
+
+- ⬜ Player Inventory Window
+- ⬜ Storage Window
+- ⬜ Dual Inventory View
+- ⬜ Item Tooltips
 
 ## Gameplay
 
-- ⬜ Eat Food
-- ⬜ Hunger Recovery
-- ⬜ Consume Inventory Items
+- ⬜ Transfer Items
+- ⬜ Move Between Inventories
+- ⬜ Container Interactions
+- ⬜ Inventory Window Management
 
 ---
 
