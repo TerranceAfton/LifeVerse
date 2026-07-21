@@ -1,6 +1,4 @@
-# LifeVerse Devlog
-
-## Version 0.3.1 - Inventory Foundation
+# LifeVerse Devlog #12
 
 **Release Date:** July 21, 2026
 
