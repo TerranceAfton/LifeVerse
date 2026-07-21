@@ -30,8 +30,8 @@ namespace LifeVerse.Items.UI
                 return;
             }
 
-            _icon.enabled = true;
             _icon.sprite = slot.Item.Definition.Icon;
+            _icon.enabled = _icon.sprite != null;
 
             _quantityText.text =
                 slot.Item.Quantity > 1
@@ -44,8 +44,8 @@ namespace LifeVerse.Items.UI
         /// </summary>
         public void ShowEmpty()
         {
-            _icon.enabled = false;
             _icon.sprite = null;
+            _icon.enabled = false;
 
             _quantityText.text = string.Empty;
         }

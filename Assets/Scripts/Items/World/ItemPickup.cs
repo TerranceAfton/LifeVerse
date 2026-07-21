@@ -40,6 +40,10 @@ namespace LifeVerse.Items.World
             {
                 Destroy(gameObject);
             }
+            else
+            {
+                _worldItem.SetQuantity(remaining);
+            }
         }
     }
 }

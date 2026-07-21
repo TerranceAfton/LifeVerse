@@ -15,47 +15,33 @@ namespace LifeVerse.Characters.Components
 
         [SerializeField]
         [Min(1)]
-        private int _slotCount = 24;
+        private int _capacity = 24;
 
         /// <summary>
-        /// Gets the player's inventory container.
+        /// Gets the player's inventory.
         /// </summary>
-        public InventoryContainer Inventory { get; private set; }
+        public Inventory Inventory { get; private set; }
 
         private void Awake()
         {
-            Inventory = new InventoryContainer(_slotCount);
+            Inventory = new Inventory(_capacity);
         }
 
         /// <summary>
-        /// Attempts to add an item to the inventory.
+        /// Attempts to add items to the inventory.
         /// </summary>
-        /// <param name="definition">The item to add.</param>
-        /// <param name="quantity">The quantity to add.</param>
-        /// <returns>The quantity that could not be added.</returns>
         public int AddItem(ItemDefinition definition, int quantity)
         {
-            if (Inventory == null)
-            {
-                throw new InvalidOperationException("Inventory has not been initialized.");
-            }
-
+            EnsureInitialized();
             return Inventory.AddItem(definition, quantity);
         }
 
         /// <summary>
-        /// Attempts to remove an item from the inventory.
+        /// Attempts to remove items from the inventory.
         /// </summary>
-        /// <param name="definition">The item to remove.</param>
-        /// <param name="quantity">The quantity to remove.</param>
-        /// <returns>The quantity that could not be removed.</returns>
         public int RemoveItem(ItemDefinition definition, int quantity)
         {
-            if (Inventory == null)
-            {
-                throw new InvalidOperationException("Inventory has not been initialized.");
-            }
-
+            EnsureInitialized();
             return Inventory.RemoveItem(definition, quantity);
         }
 
@@ -64,6 +50,7 @@ namespace LifeVerse.Characters.Components
         /// </summary>
         public bool Contains(ItemDefinition definition)
         {
+            EnsureInitialized();
             return Inventory.Contains(definition);
         }
 
@@ -72,15 +59,29 @@ namespace LifeVerse.Characters.Components
         /// </summary>
         public int GetItemCount(ItemDefinition definition)
         {
-            return Inventory.GetItemCount(definition);
+            EnsureInitialized();
+            return Inventory.Count(definition);
         }
 
         /// <summary>
-        /// Returns true if the inventory has room for the specified quantity.
+        /// Returns true if the inventory is full.
         /// </summary>
-        public bool HasSpaceFor(ItemDefinition definition, int quantity)
+        public bool IsFull()
         {
-            return Inventory.HasSpaceFor(definition, quantity);
+            EnsureInitialized();
+            return Inventory.IsFull();
+        }
+
+        /// <summary>
+        /// Gets the number of empty inventory slots.
+        /// </summary>
+        public int EmptySlotCount
+        {
+            get
+            {
+                EnsureInitialized();
+                return Inventory.EmptySlotCount;
+            }
         }
 
         /// <summary>
@@ -88,7 +89,20 @@ namespace LifeVerse.Characters.Components
         /// </summary>
         public void Clear()
         {
+            EnsureInitialized();
             Inventory.Clear();
+        }
+
+        /// <summary>
+        /// Ensures the inventory has been initialized.
+        /// </summary>
+        private void EnsureInitialized()
+        {
+            if (Inventory == null)
+            {
+                throw new InvalidOperationException(
+                    "Inventory has not been initialized.");
+            }
         }
     }
 }

@@ -43,5 +43,19 @@ namespace LifeVerse.Items.World
             _definition = definition;
             _quantity = Mathf.Max(1, quantity);
         }
+
+        /// <summary>
+        /// Updates the quantity represented by this world item.
+        /// If the quantity reaches zero, the world item destroys itself.
+        /// </summary>
+        public void SetQuantity(int quantity)
+        {
+            _quantity = Mathf.Max(0, quantity);
+
+            if (_quantity == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

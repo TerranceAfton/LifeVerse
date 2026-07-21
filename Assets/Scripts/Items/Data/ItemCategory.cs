@@ -10,15 +10,15 @@ namespace LifeVerse.Items.Data
         Food,
         Drink,
 
+        Ingredient,
+
+        Medicine,
+
         Book,
 
         Tool,
 
         Key,
-
-        Medicine,
-
-        Ingredient,
 
         Electronics,
 
@@ -26,14 +26,22 @@ namespace LifeVerse.Items.Data
 
         Furniture,
 
+        Household,
+
         Decoration,
 
         Toy,
 
         Collectible,
 
+        Seed,
+
+        Pet,
+
+        Crafting,
+
         Quest,
 
-        Miscellaneous
+        Misc
     }
 }

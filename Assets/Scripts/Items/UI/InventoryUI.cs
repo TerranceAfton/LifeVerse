@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using LifeVerse.Characters.Components;
-using LifeVerse.Items.Events;
 
 namespace LifeVerse.Items.UI
 {
@@ -47,9 +46,10 @@ namespace LifeVerse.Items.UI
             }
         }
 
-        private void OnInventoryChanged(
-            object sender,
-            InventoryChangedEventArgs e)
+        /// <summary>
+        /// Called whenever the inventory changes.
+        /// </summary>
+        private void OnInventoryChanged()
         {
             Refresh();
         }
@@ -76,7 +76,7 @@ namespace LifeVerse.Items.UI
 
             _slotUIs.Clear();
 
-            for (int i = 0; i < _playerInventory.Inventory.SlotCount; i++)
+            for (int i = 0; i < _playerInventory.Inventory.Capacity; i++)
             {
                 InventorySlotUI slot =
                     Instantiate(_slotPrefab, _slotContainer);
