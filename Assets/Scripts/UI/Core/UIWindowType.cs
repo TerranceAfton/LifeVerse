@@ -1,30 +1,22 @@
-namespace LifeVerse.UI.Core
+public enum UIWindowType
 {
-    /// <summary>
-    /// Identifies every window in LifeVerse.
-    /// </summary>
-    public enum UIWindowType
-    {
-        None,
+    None,
 
-        MainMenu,
+    // Menus
+    MainMenu,
+    PauseMenu,
+    Settings,
 
-        PauseMenu,
+    // Gameplay Windows
+    Inventory,
+    Phone,
+    Careers,
+    Relationships,
 
-        Settings,
+    // Gameplay Overlays
+    Sleep,
 
-        Sleep,
-
-        Inventory,
-
-        Phone,
-
-        Careers,
-
-        Relationships,
-
-        BuildMode,
-
-        CreateAVerse
-    }
+    // Modes
+    BuildMode,
+    CreateAVerse
 }
