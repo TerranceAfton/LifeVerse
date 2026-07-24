@@ -1,8 +1,8 @@
 # LifeVerse Roadmap
 
-> **Current Version:** v0.3.1 – Inventory Foundation
+> **Current Version:** v0.3.2 – Household Storage & Inventory UI
 >
-> **Current Development:** v0.3.2 – Household Storage & Inventory UI
+> **Current Development:** v0.3.3 – Household Storage
 >
 > LifeVerse is currently focused on expanding household gameplay systems before moving into deeper life simulation features.
 
@@ -266,7 +266,36 @@
 
 ---
 
-# Version 0.3.2 - Household Storage & Inventory UI 🚧
+# Version 0.3.2 - Household Storage & Inventory UI ✅
+
+## User Interface
+
+- ✅ Player Inventory Window
+- ✅ Inventory UI Controller
+- ✅ Inventory Input Action
+- ✅ Event-Driven Inventory UI
+- ✅ UIManager Integration
+- ✅ Automatic Inventory Refresh
+- ✅ Inventory Window Registration
+- ✅ Modular UI Architecture
+
+## Architecture
+
+- ✅ InventoryPressedEvent
+- ✅ EventBus Integration
+- ✅ Inventory Window Management
+- ✅ Decoupled Input & UI Systems
+
+### Gameplay Loop
+
+- ✅ Press **I**
+- ✅ Inventory Event Published
+- ✅ Inventory Window Opens
+- ✅ Inventory Refreshes Automatically
+
+---
+
+# Version 0.3.3 - Household Storage 🚧
 
 ## Storage
 
@@ -275,24 +304,29 @@
 - ⬜ Pantry Storage
 - ⬜ Bookshelves
 - ⬜ Dressers
+- ⬜ Generic Household Containers
 
-## User Interface
+## Inventory
 
-- ⬜ Player Inventory Window
-- ⬜ Storage Window
+- ⬜ Inventory Toggle
 - ⬜ Dual Inventory View
+- ⬜ Drag & Drop Items
 - ⬜ Item Tooltips
+- ⬜ Transfer Items
+- ⬜ Split Item Stacks
+- ⬜ Merge Item Stacks
+- ⬜ Move Between Inventories
 
 ## Gameplay
 
-- ⬜ Transfer Items
-- ⬜ Move Between Inventories
 - ⬜ Container Interactions
-- ⬜ Inventory Window Management
+- ⬜ Open Household Storage
+- ⬜ Store Household Items
+- ⬜ Retrieve Household Items
 
 ---
 
-# Version 0.3.3 - Kitchen Appliances
+# Version 0.3.4 - Kitchen Appliances
 
 ## Kitchen
 
@@ -321,6 +355,8 @@
 - ⬜ Meal Creation
 - ⬜ Burnt Food
 - ⬜ Cooking UI
+- ⬜ Food Quality
+- ⬜ Leftovers
 
 ---
 
@@ -404,7 +440,7 @@
 - ⬜ Character Simulation
 - ⬜ Needs
 - ⬜ Inventory
-- ⬜ Household Objects
+- ⬜ Household Storage
 - ⬜ Food & Cooking
 - ⬜ Relationships
 - ⬜ Careers

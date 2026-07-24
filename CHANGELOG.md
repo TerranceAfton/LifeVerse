@@ -6,6 +6,31 @@ All notable changes to LifeVerse will be documented in this file.
 
 # CHANGELOG
 
+## [0.3.2] - Household Storage & Inventory UI
+
+### Added
+
+- Initial Inventory Window
+- Inventory UI framework
+- Inventory UI Controller
+- Inventory input action
+- InventoryPressedEvent
+- Event-driven inventory opening
+- Automatic inventory refresh when opened
+
+### Changed
+
+- InputService now broadcasts inventory events
+- UIManager integration for inventory windows
+- Improved UI architecture using controllers
+
+### Technical
+
+- Introduced InventoryUIController
+- Connected InputService to EventBus
+- Connected EventBus to UIManager
+- InventoryWindow now refreshes InventoryUI when opened
+
 ## [0.3.1] - 2026-07-21
 
 ### Added

@@ -120,15 +120,15 @@ namespace LifeVerse.Input
         private void RegisterCallbacks()
         {
             _actions.Gameplay.Pause.performed += OnPause;
-
             _actions.Gameplay.Interact.performed += OnInteract;
+            _actions.Gameplay.Inventory.performed += OnInventory;
         }
 
         private void UnregisterCallbacks()
         {
             _actions.Gameplay.Pause.performed -= OnPause;
-
             _actions.Gameplay.Interact.performed -= OnInteract;
+            _actions.Gameplay.Inventory.performed -= OnInventory;
         }
 
         private void OnPause(InputAction.CallbackContext context)
@@ -141,6 +141,12 @@ namespace LifeVerse.Input
         {
             EventBus.Publish(
                 new InteractPressedEvent());
+        }
+
+        private void OnInventory(InputAction.CallbackContext context)
+        {
+            EventBus.Publish(
+                new InventoryPressedEvent());
         }
 
         #endregion

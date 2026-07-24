@@ -11,7 +11,7 @@
 ![Unity](https://img.shields.io/badge/Unity-6-black)
 ![C#](https://img.shields.io/badge/C%23-.NET-purple)
 ![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)
-![Version](https://img.shields.io/badge/Version-v0.3.1-blue)
+![Version](https://img.shields.io/badge/Version-v0.3.2-blue)
 
 # 🌎 LifeVerse
 
@@ -43,6 +43,43 @@ Every character should feel alive.
 
 # 🚀 Recent Milestones
 
+### v0.3.2 – Household Storage & Inventory UI ✅
+
+- ✅ Completed Inventory Window
+- ✅ Added Inventory UI Controller
+- ✅ Added Event-Driven Inventory UI
+- ✅ Added Inventory Input Action
+- ✅ Connected Inventory to UI Manager
+- ✅ Added Automatic Inventory Refresh
+- ✅ Established Modular UI Architecture
+- ✅ Foundation for Household Storage Interfaces
+
+Gameplay Loop:
+
+Press **I**
+
+↓
+
+Inventory Input Action
+
+↓
+
+InventoryPressedEvent Published
+
+↓
+
+Inventory UI Controller
+
+↓
+
+UI Manager
+
+↓
+
+Inventory Window Opens
+
+---
+
 ### v0.3.1 – Inventory Foundation ✅
 
 - ✅ Completed Inventory Framework
@@ -54,7 +91,7 @@ Every character should feel alive.
 - ✅ Added World Items
 - ✅ Added World Item Pickups
 - ✅ Added Player Inventory
-- ✅ Added Inventory UI
+- ✅ Added Inventory UI Framework
 - ✅ Added Inventory Events
 - ✅ Added Item Stacking
 - ✅ Added Partial Item Transfers
@@ -121,24 +158,25 @@ Close Refrigerator
 
 ## Current Version
 
-**Prototype v0.3.1 (Pre-Alpha)**
+**Prototype v0.3.2 (Pre-Alpha)**
 
 ### Latest Completed Milestone
 
-🏆 Inventory Foundation
+🏆 Household Storage & Inventory UI
 
 ### Current Development
 
-🚧 Version 0.3.2 – Household Storage & Inventory UI
+🚧 Version 0.3.3 – Inventory Interaction & Storage
 
 Current Focus
 
-- Player Inventory Window
-- Storage Containers
+- Inventory Toggle
+- Drag & Drop
+- Household Storage Containers
 - Refrigerator Storage
 - Cabinet Storage
 - Item Transfers
-- Food Items
+- Item Tooltips
 
 ---
 
@@ -210,13 +248,18 @@ Current Focus
 - Player Inventory
 - Storage Containers
 - Inventory Events
+- Inventory Window
 - Inventory UI
+- Inventory UI Controller
+- Inventory Input Action
+- Event-Driven UI Architecture
 - World Items
 - Item Pickups
 - Item Stacking
 - Partial Item Transfers
 - Inventory Capacity
 - Runtime Inventory Management
+- Automatic Inventory Refresh
 
 ---
 
@@ -250,12 +293,14 @@ Current Focus
 
 # 🚧 Currently Developing
 
-## Version 0.3.2
+## Version 0.3.3
 
-- Player Inventory Window
-- Storage Containers
+- Inventory Toggle
+- Drag & Drop
+- Household Storage
 - Refrigerator Inventory
 - Cabinet Storage
+- Item Tooltips
 - Food Definitions
 - Item Transfers
 - Eating System
@@ -314,12 +359,12 @@ Core Engine
 Gameplay Foundation
 
 ████████████████████ 100%  
-Interaction & Inventory
+Interaction & Inventory Foundation
 
 ████████████████████ 100%  
-Furniture Framework
+Inventory UI Framework
 
-████████████████░░░░ 75%  
+████████████████░░░░ 80%  
 Household Objects
 
 ████████░░░░░░░░░░░░ 40%  
@@ -377,6 +422,7 @@ Project documentation includes:
 - Furniture Framework
 - Appliance Framework
 - Inventory System
+- UI Architecture
 - Development Logs
 - Changelog
 - Roadmap
